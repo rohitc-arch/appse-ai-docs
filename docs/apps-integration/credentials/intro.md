@@ -1,5 +1,6 @@
 ---
 title: "Credentials"
+slug : /credentials
 sidebar_position: 2.1
 ---
 

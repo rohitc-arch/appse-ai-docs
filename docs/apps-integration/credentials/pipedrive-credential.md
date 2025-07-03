@@ -1,5 +1,6 @@
 ---
-title: "Pipedrive Credential"
+title: "Pipedrive"
+slug : /credentials/pipedrive-credential
 ---
 
 Welcome to the Pipedrive credential setup guide!
@@ -48,26 +49,29 @@ You’ll be asked to fill in the following details:
 
 ### 3. Find Your Pipedrive Domain
 
-1. While logged in to Pipedrive, look at the URL in your browser.
-2. Your domain is the part before `.pipedrive.com`.
+1. From the same dashboard. Click your profile icon (top right) → **Company Settings**.
+<img src="/img/credentials/pipedrive-cred-company-settings.png" alt="APPSeAI Pipedrive Company Settings" width="700"/>
+
+2. You will be able to see a field with your **Company Domain** in it.
+<img src="/img/credentials/pipedrive-cred-company-domain.png" alt="APPSeAI Pipedrive Company Domain" width="700"/>
+
 
 > **Example**:
-> - Full URL: `https://acme.pipedrive.com`
-> - Domain: `acme.pipedrive.com`
+> - Domain: `nefariusinc`
 
 ---
 
-## Test Your Credential
+## Save Your Credential
 
-Once you've filled in the **Connection Name**, **API Key Value**, and **Domain**, click **"Save"** to store and verify your setup.
+Once you've filled in the necessary fields, click **"Save"** to store and verify your setup.
 
-- If successful, your Pipedrive integration is ready to use.
-- If it fails, please recheck your API Key and Domain or contact support.
+- If successful, your Pipedrive credential will show a "✓" icon. Now you can use this application for your integrations.
+- If it fails, you will be displayed a "!" icon. In that case, please recheck your API Key and Domain or contact support.
 
 ---
 
 ## Need Help?
 
-If you’re unsure about any field or face connection issues, reach out to our support team at [support@appseai.com](mailto:support@appseai.com).
+If you’re unsure about any field or face connection issues, reach out to our support team at support@appseai.com.
 
 ---

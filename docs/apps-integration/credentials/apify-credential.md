@@ -1,5 +1,6 @@
 ---
 title: "Apify"
+slug : /credentials/apify-credential
 ---
 
 Welcome to the Apify credential setup guide!
@@ -46,17 +47,17 @@ You’ll be asked to fill in the following details:
 
 ---
 
-## Test Your Credential
+## Save Your Credential
 
-Once you've entered the **Connection Name** and **Bearer Token**, click **"Test Connection"**.
+Once you've filled in the necessary fields, click **"Save"** to store and verify your setup.
 
-- If successful, you’ll see a confirmation message and the connection will be saved.
-- If it fails, double-check the token or ensure your Apify account is active.
+- If successful, your Pipedrive credential will show a "✓" icon. Now you can use this application for your integrations.
+- If it fails, you will be displayed a "!" icon. In that case, please recheck your API Key and Domain or contact support.
 
 ---
 
 ## Need Help?
 
-If you're unsure where to find your API token or encounter issues connecting to Apify, feel free to reach out to us at [support@appseai.com] — our team will be happy to assist!
+If you’re unsure about any field or face connection issues, reach out to our support team at support@appseai.com.
 
 ---

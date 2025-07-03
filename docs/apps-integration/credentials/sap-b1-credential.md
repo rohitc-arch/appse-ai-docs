@@ -1,5 +1,6 @@
 ---
-title: "SAP B1 Credential"
+title: "SAP Business One"
+slug : /credentials/sap-b1-credential
 ---
 
 Welcome to the SAP Business One (SAP B1) credential setup guide!
@@ -31,21 +32,19 @@ Provide a name for your credential in the `Connection Name` field. This will be 
 
 1. Open the SAP Business One **Service Layer** configuration or ask your SAP B1 administrator.
    - It will look something like: `https://{localip}:50000/ControlCenter/`
-   - You should see page titled - **System Landscape Directory**
+   - You should see page titled - `System Landscape Directory`
 
-2. Locate the base URL used to access the Service Layer API. Go to _Services_ → _Service Layer_
+2. Login to the platform using your **System Landscape Directory Credentials**.
+<img src="/img/credentials/sap-b1-cred-sld-login.png" alt="APPSeAI SAP Business One Credentials System Landscape Directory Login" />
+
+3. Locate the base URL used to access the Service Layer API. Go to _Services_ → _Service Layer_
 <img src="/img/credentials/sap-b1-cred-host-url.png" alt="APPSeAI SAP Business One Credentials Url and Port" />
-   - It will look something like: **https://insync.pro**
 
-3. Check the configured port, commonly **50000**.
-> *Example*:
-> - **Host URL**: `https://insync.pro`
+4. Add your Host URL and Port. With respect to the image you will be adding:
+> - **Host URL**: `https://10.0.2.68`
 > - **Port**: `50000`
 
-> *Tip*: If you want to access the System Landscape Directory(SLD) via Web Browser. Use the URL format below:
-- **URL Format**: http://[sld-server]:[port]/sld
-- **Default Port**: Usually 50000 (HTTP) or 50001 (HTTPS)
-- **Example**: _http://sldserver.company.com:50000/sld_
+
 ---
 
 ### 3. Find Your Company DB Name
@@ -58,31 +57,30 @@ Provide a name for your credential in the `Connection Name` field. This will be 
 
 <img src="/img/credentials/sap-b1-cred-db-name2.png" alt="APPSeAI SAP Business One Credentials Database Name" />
 
+> **Note**: Depending on your setup, you might see `https://insync.pro` instead of `https://10.0.2.68`. Either can be used as your Host URL input.
+
 ---
 
 ### 4. Get Your Username and Password
 <img src="/img/credentials/sap-b1-credentials.png" alt="APPSeAI SAP Business One Credentials" width="602" height="306" />
 
-1. Use your **SAP B1 login credentials**.
+1. Use your **SAP B1 client login credentials**.
 2. Make sure the user has sufficient API permissions for integration.
 
 ---
 
-## Test Your Credential
+## Save Your Credential
 
-Once you've filled out the form with the above values, it should look something like this:
+Once you've filled in the necessary fields, click **"Save"** to store and verify your setup.
 
-<img src="/img/credentials/sap-b1.png" alt="APPSeAI SAP Business One Configuration Screen" width="487" height="525" />
-
-Click the **"Save"** button to store validate your inputs.
-
-- If successful, your SAP B1 connection will be established.
-- If not, please double-check the credentials or consult your administrator.
+- If successful, your Pipedrive credential will show a "✓" icon. Now you can use this application for your integrations.
+- If it fails, you will be displayed a "!" icon. In that case, please recheck your API Key and Domain or contact support.
 
 ---
 
 ## Need Help?
 
-If you’re unsure about any field or face connection issues, reach out to our support team at [support@appseai.com](mailto:support@appseai.com).
+
+If you’re unsure about any field or face connection issues, reach out to our support team at support@appseai.com.
 
 ---

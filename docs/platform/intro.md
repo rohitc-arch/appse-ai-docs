@@ -1,23 +1,39 @@
 ---
-title: Platform Inroduction
+title: Welcome to APPSe AI
 ---
 
-# Welcome to APPSe AI Docs
+Welcome to the APPSe AI Platform Tour! This guide will walk you through each major section of the platform to help you get started and navigate with ease.
 
-This documentation is your starting point for understanding and working with **APPSe AI** — an intelligent integration platform built to automate business flows across applications used in various industries.
+## 1. Home
+- Overview of what users see after logging in.
+- Highlights of quick access features and dashboard elements.
 
----
+## 2. Credentials
+- Explanation of how to add, manage, and test credentials.
+- Purpose of using credentials for integrations.
 
-## About the Platform
+## 3. ProcessFlows
+- What are ProcessFlows and how to build one.
+- Drag-and-drop designer canvas and available nodes.
 
-**APPSe AI** focuses on enabling AI-driven automation across your connected systems. The platform helps users design, execute, and manage business processes through:
+## 4. Tables
+- What Tables are and their role in storing or referencing data.
+- How to create and manage tables.
 
-- **Application Integration** — Connect business apps and systems with minimal configuration  
-- **Processflow Designer** — Build workflows using a drag-and-drop canvas  
-- **Credential Management** — Securely store and reuse access credentials  
-- **AI Agent Node** — Incorporate intelligent automation for decision-making and process optimization  
-- **Execution History** — Track and review the status and results of your automations
+## 5. Marketplace
+- Overview of available pre-built connectors and templates.
+- How to install and use items from the marketplace.
 
-As you explore this documentation, you’ll get familiar with each area of the platform and learn how to make the most of its automation capabilities.
+## 6. Help
+- Access to help documentation and tutorials.
+- Guidance on troubleshooting common issues.
+
+## 7. Chat With Us
+- Where to find the live chat support.
+- Use cases for reaching out to the support team.
+
+## 8. Settings
+- Managing your organization, users, and preferences.
+- Configuration options for account and workspace.
 
 ---
