@@ -17,8 +17,8 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Browse key features like credential management, processflows, execution
-        history, and AI agents, everything built to simplify integration.
-        <a href="/platform/intro"> Explore</a>
+        history, and AI agents, everything built to simplify integration.{' '}
+        <a href="/platform/intro">Explore</a>
       </>
     ),
   },
@@ -28,8 +28,8 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Connect your favorite apps in minutes. Sync data effortlessly across
-        platforms with zero-code integrations and enterprise-grade reliability.
-        <a href="apps-integration/introduction"> Explore</a>
+        platforms with zero-code integrations and enterprise-grade reliability.{' '}
+        <a href="apps-integration/introduction">Explore</a>
       </>
     ),
   },
@@ -39,7 +39,7 @@ const FeatureList: FeatureItem[] = [
   description: (
     <>
       Turn manual tasks into smart, automated workflows. Launch faster, scale
-      smarter — Your journey to operational efficiency starts here.
+      smarter — Your journey to operational efficiency starts here. 
     </>
   ),
 },
