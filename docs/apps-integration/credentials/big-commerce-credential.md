@@ -95,7 +95,9 @@ You will now have your **Access Token** for use within the APPSe AI platform.
 Once both **Store Hash** and **API Token** are entered into the credential form, use the **Save** button to store your configurations.
 
 - If successful, your BigCommerce integration will be ready to use.
-- If unsuccessful, ensure your Store Hash and token are correct and that the scopes are properly set.
+- If unsuccessful, try the following solutions:
+   * Ensure your Store Hash and token are correct and that the scopes are properly set.
+   * Ensure that your API token has the required scope for the Customers endpoint. Missing or insufficient permissions may result in authentication or data access errors. Refer to the OAuth scope recommendation table above.
 
 ---
 
