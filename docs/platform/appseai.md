@@ -3,7 +3,17 @@ id: appseai-introduction
 title: What is APPSe AI?
 sidebar_position: 1
 slug: /what-is-appse-ai-flow
-
+keywords:
+  - appse ai
+  - integration platform as a service
+  - iPaaS
+  - workflow automation
+  - no-code integration
+  - low-code automation
+  - business process automation
+  - data integration
+  - cloud integration
+  - ai-powered automation
 ---
 
 Integration Platform as a Service (iPaaS) is a cloud-based solution that enables businesses to connect disparate applications, data sources, and systems—without writing complex code or managing backend infrastructure. It acts as the bridge between software tools, ensuring seamless data flow and automated workflows across your digital ecosystem. iPaaS empowers both technical and non-technical users to accelerate operations, reduce manual errors, and adapt quickly to changing business needs.
