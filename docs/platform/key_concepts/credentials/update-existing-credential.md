@@ -1,8 +1,8 @@
 ---
-title: Node Setup and Configuration
-sidebar_position: 1
-description: Learn the basics of all the steps involved in configuring any node.
-slug: platform/key-concepts/workflow/node-setup-and-configuration
+title: Update Existing Credential
+sidebar_position: 2
+description: Learn how to modify an existing credential within the appse ai platform.
+slug: platform/key-concepts/credentials/update-existing-credential/
 ---
 
 <div style={{ textAlign: 'center' }}>

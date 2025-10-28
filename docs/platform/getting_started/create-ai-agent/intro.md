@@ -1,8 +1,10 @@
 ---
-title: Node Setup and Configuration
-sidebar_position: 1
-description: Learn the basics of all the steps involved in configuring any node.
-slug: platform/key-concepts/workflow/node-setup-and-configuration
+id: intro
+title: Overview
+sidebar_position: 0
+description: Step-by-step guide to creating your first AI agent in the APPSeAI platform.
+keywords: [getting started, create flow, workflow, APPSeAI]
+slug: /platform/getting-started/create-ai-agent/intro/
 ---
 
 <div style={{ textAlign: 'center' }}>
