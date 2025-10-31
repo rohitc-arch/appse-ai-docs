@@ -4,7 +4,7 @@ slug : /platform/getting-started
 sidebar_position: 2
 ---
 
-If you don’t have an account yet, you visit [appse ai](https://workflow.appse.ai/) and finish the onboarding steps to sign up for absolutely free. This gives you access to core features to start building integrations right away.
+If you don’t have an account yet, you can visit [appse ai](https://workflow.appse.ai/) and finish the onboarding steps to sign up for absolutely free. This gives you access to core features to start building integrations right away.
 
 When you're ready to unlock premium features & higher usage limits, check out our [pricing page](https://appse.ai/pricing/) to explore available plans.
 
