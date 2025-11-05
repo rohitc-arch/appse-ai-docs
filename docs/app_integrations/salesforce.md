@@ -25,7 +25,7 @@ You’ll be asked to fill in the following details:
 
 #### 1. Go to Setup
 
-Log into your Salesforce account. From the Home Screen, go to Setup.
+Log into your [Salesforce](https://login.salesforce.com/) account. From the Home Screen, go to Setup.
 
 <img src="\img\credentials\salesforce\setup.png" alt="salesforce setup" width="700"/>
 
@@ -65,7 +65,7 @@ Next, go to Flow Enablement and make sure the following fields are:
 | Enable Authorization Code and Credentials Flow   | Enabled |
 | Require Proof Key for Code Exchange (PKCE) extension for Supported Authorization Flows    | Disabled         |
 
-> Note: All other fields should stay default.
+> **Note:** All other fields / child fields should stay default.
 
 #### 7. Create the app
 

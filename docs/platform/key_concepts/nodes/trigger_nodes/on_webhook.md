@@ -29,11 +29,11 @@ The configuration screen includes the following fields:
 <img src="\img\platform\key-concepts\nodes\triggers\webhook\webhook-configuration.png" alt="appse ai webhook configuration" width="700"/>
 
 
-#### a. HTTP Method
+### a. HTTP Method
 
 Defines which HTTP method your webhook will accept. Commonly used: `POST` for sending data.
 
-#### b. Set Webhook Path
+### b. Set Webhook Path
 
 A unique identifier automatically generated for your webhook endpoint. You can edit this path to create a meaningful URL.
 
@@ -42,17 +42,15 @@ A unique identifier automatically generated for your webhook endpoint. You can e
 > Example: `order-created`
 
 
-#### c. Preview URLs
+### c. Preview URLs
 
 Based on the “Webhook path” field, the URLs will dynamically change. Once set, appse ai provides two types of webhook URLs — **Test** and **Production** — to support different stages of your workflow lifecycle. 
 
-Test URL: appse ai automatically starts listening for a test webhook when you select “Start Listening” or “Run Once” on a workflow that isn’t active. When you trigger this webhook, the incoming data is displayed directly in the Workflow Output area, allowing you to verify the payload structure and integration behavior during setup.
+**Test URL:** appse ai automatically starts listening for a test webhook when you select “Start Listening” or “Run Once” on a workflow that isn’t active. When you trigger this webhook, the incoming data is displayed directly in the Workflow Output area, allowing you to verify the payload structure and integration behavior during setup.
 
-Production URL: A production webhook URL continuously listens for requests when the workflow is activated.
+**Production URL:** A production webhook URL continuously listens for requests when the workflow is activated. Data sent to the production URL isn’t displayed in the workflow output area. Instead, you can review production webhook executions in the Execution History.
 
-> Note: Data sent to the production URL isn’t displayed in the workflow output area. Instead, you can review production webhook executions in the Execution History.
-
-—
+> Note: To access the production URL executions, go to your Workflow List, select View Executions, and open the specific execution you want to inspect.
 
 ## 4. Listening for Events
 
