@@ -15,7 +15,7 @@ keywords:
   - ai-powered automation
 ---
 
-appse ai is a next-generation AI automation platform designed to simplify and streamline business operations using a wide range of tools and applications. With a strong focus on catering to enterprise-level apps, it offers intelligent solutions for complex business scenarios that go beyond simple A-to-B integrations. This release introduces new features that empower users to automate business workflows and execute tasks more efficiently.
+appse ai is a next-generation AI automation platform designed to simplify and streamline business operations using a wide range of tools and applications. With a strong focus on catering to enterprise-level apps, it offers intelligent solutions for complex business scenarios that go beyond simple A-to-B integrations.
 
 ## So why choose us?
 

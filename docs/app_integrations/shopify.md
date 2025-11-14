@@ -1,6 +1,6 @@
 ---
 title: "Shopify"
-slug : /app-integrations/shopify
+slug : /app-integrations/shopify/
 ---
 
 Shopify is a powerful e-commerce platform that enables businesses to build, customize, and manage their online stores with ease. With appse ai, you can connect your Shopify account to automate key operations such as order management, customer data synchronization, and product updates. This integration helps streamline your e-commerce workflows, reduce manual effort, and ensure that your online store runs efficiently across all connected systems.
