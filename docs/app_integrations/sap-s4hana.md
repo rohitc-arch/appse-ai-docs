@@ -1,6 +1,6 @@
 ---
 title: "SAP S4Hana"
-slug : /app-integrations/sap-s4hana
+slug : /app-integrations/sap-s4hana-cloud
 ---
 
 SAP S/4HANA is a cloud-based ERP system designed to help businesses manage their core operations, such as finance, procurement, manufacturing, supply chain, and sales on a single integrated platform. It enables organizations to streamline processes, improve efficiency, and make data-driven decisions with real-time insights.
