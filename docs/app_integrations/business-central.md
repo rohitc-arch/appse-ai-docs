@@ -38,7 +38,7 @@ You’ll need to provide:
 <img src="/img/credentials/business-central/business-central-cred-azure-dashboard.png" alt="APPSeAI Business Central Azure Dashboard" width="700"/>
 
 
-- Search for **Azure Active Directory** → **Overview**.
+- Search for **Microsoft Entra ID** → **Overview**.
 <img src="/img/credentials/business-central/business-central-cred-tenant-id.png" alt="APPSeAI Business Central Tenant ID" width="700"/>
 
 

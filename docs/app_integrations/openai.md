@@ -8,7 +8,11 @@ OpenAI provides powerful LLM (large language model) APIs for text generation, em
 
 ## Set Up Credential
 
-> Note: Before you create a credential for OpenAI using appse ai, make sure your OpenAI account has sufficient tokens to perform the actions disruption-free.
+:::info
+
+Before you create a credential for OpenAI using appse ai, make sure your OpenAI account has sufficient tokens to perform the actions disruption-free.
+
+:::
 
 ### Required Fields
 
@@ -46,6 +50,9 @@ Once you get your API secret key, paste it in appse ai’s credential form. And 
 
 <br/>
 
-> Note: Make sure you save your API secret key somewhere safe, as you won’t be able to see it again.
+:::warning
 
+Make sure you save your **API secret key** somewhere safe, as you **won’t be able to see it again**.
+
+:::
 ---

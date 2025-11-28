@@ -61,7 +61,7 @@ Alternatively, you can:
 2. Find OAuth Authentication in Step 1: Registering a Client
 3. Click on the Zoho Developer Console link
 
-<img src="\img\credentials\zoho-crm\click_on_Zoho_developer_console.png" alt="click on Zoho developer console" width="700"/>
+<img src="\img\credentials\zoho-crm\click_on_zoho_developer_console.png" alt="click on Zoho developer console" width="700"/>
 
 ### Step 4: Sign In to Developer Console
 Sign in with the same account you used to create a Zoho CRM account:

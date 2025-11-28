@@ -36,11 +36,19 @@ You’ll be asked to fill in the following details:
 
 - Copy the **API token** provided under the "API" section.
 
-> **Example**:
-> - API Token: `d5a1234e5678abcde9012345fghij6789klm0n`
-<img src="/img/credentials/pipedrive/pipedrive-cred-api-key.png" alt="APPSeAI Pipedrive API Key" width="700"/>
+:::note
 
-`Note`: Treat your API key like a password. Do not share it publicly.
+**Example**
+API Token: `d5a1234e5678abcde9012345fghij6789klm0n`
+
+:::
+<br/>
+
+<img src="/img/credentials/pipedrive/pipedrive-cred-api-key.png" alt="APPSeAI Pipedrive API Key" width="700"/>
+<br/><br/>
+:::tip
+Treat your API key like a password. Do not share it publicly.
+:::
 
 #### 3. Find Your Pipedrive Domain
 
