@@ -1,0 +1,69 @@
+name: Build & Deploy Docs to AKS (latest)
+
+on:
+  push:
+    branches:
+      - updatefromazuredevops
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      ACR_NAME: appseaiacr
+      IMAGE_NAME: appseai-doc
+      NAMESPACE: appseai-wfa
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: updatefromazuredevops
+
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+
+      - name: Login to ACR
+        run: |
+          echo "${{ secrets.ACR_PASSWORD }}" | docker login \
+            $ACR_NAME.azurecr.io \
+            -u ${{ secrets.ACR_NAME }} \
+            --password-stdin
+
+      - name: Build & Push Docker Image
+        run: |
+          docker build -t $ACR_NAME.azurecr.io/$IMAGE_NAME:latest .
+          docker push $ACR_NAME.azurecr.io/$IMAGE_NAME:latest
+
+      - name: Get AKS credentials
+        run: |
+          az aks get-credentials \
+            --resource-group ${{ secrets.RESOURCE_GROUP }} \
+            --name ${{ secrets.AKS_CLUSTER_NAME }} \
+            --overwrite-existing
+
+      - name: Ensure namespace exists
+        run: |
+          kubectl create namespace $NAMESPACE --dry-run=client -o yaml | kubectl apply -f -
+
+      - name: Deploy to AKS
+        run: |
+          kubectl apply -f k8s/deployment.yaml
+          kubectl apply -f k8s/service.yaml
+
+      - name: Restart deployment
+        run: |
+          kubectl rollout restart deployment/appseai-docs -n $NAMESPACE
+
+      - name: Verify rollout
+        run: |
+          kubectl rollout status deployment/appseai-docs -n $NAMESPACE
+          kubectl get svc appseai-docs -n $NAMESPACE
