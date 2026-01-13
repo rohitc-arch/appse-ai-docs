@@ -54,8 +54,8 @@ jobs:
       # 6. Deploy to AKS
       - name: Deploy to AKS
         run: |
-          kubectl apply -f k8s/deployment.yaml
-          kubectl apply -f k8s/service.yaml
+          kubectl apply -f k8s/workflow-docs-deployment.yaml
+          kubectl apply -f k8s/workflow-docs-services.yaml
 
       # 7. Restart deployment to force image pull
       - name: Restart deployment
