@@ -1,6 +1,6 @@
 # appse ai Documentation
 
-Official documentation for **appse ai**, a platform by [APPSeCONNECT](https://www.appseconnect.com/), built with [Docusaurus](https://docusaurus.io/).
+Official documentation for [appse ai](https://docs.appse.ai), a platform by [APPSeCONNECT](https://www.appseconnect.com/)
 
 ## 🚀 Quick Start
 
@@ -177,6 +177,8 @@ For support and questions, please contact the APPSeCONNECT team or open an issue
 ## 🌐 Links
 
 - [APPSeCONNECT Website](https://www.appseconnect.com/)
+- [appse ai Platform](https://appse.ai/)
+- [appse ai Documentation](https://docs.appse.ai)
 - [Docusaurus Documentation](https://docusaurus.io/)
 - [Markdown Guide](https://www.markdownguide.org/)
 
