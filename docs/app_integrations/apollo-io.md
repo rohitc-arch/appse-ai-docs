@@ -15,12 +15,12 @@ Apollo.io is a B2B sales intelligence and engagement platform that helps teams d
 
 ## Key Features
 
-**Lead Discovery**: Find targeted B2B prospects using advanced search filters.
-**Data Enrichment**: Enrich contacts and companies with verified contact and firmographic data.
-**Sales Automation**: Automate outbound emails, follow-ups, and engagement sequences.
-**Intent Signals**: Identify accounts showing buying interest.
-**CRM Sync**: Sync leads and contacts with connected CRM systems.
-**Integrations**: Connect seamlessly with Appse.ai and other third-party tools.
+- **Lead Discovery**: Find targeted B2B prospects using advanced search filters.
+- **Data Enrichment**: Enrich contacts and companies with verified contact and firmographic data.
+- **Sales Automation**: Automate outbound emails, follow-ups, and engagement sequences.
+- **Intent Signals**: Identify accounts showing buying interest.
+- **CRM Sync**: Sync leads and contacts with connected CRM systems.
+- **Integrations**: Connect seamlessly with Appse.ai and other third-party tools.
 
 ---
 
