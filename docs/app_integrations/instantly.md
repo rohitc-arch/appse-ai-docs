@@ -5,23 +5,21 @@ slug: /app-integrations/instantly/
 
 Instantly is a cold email outreach tool that helps you scale your outreach campaigns. With appse ai, you can receive data from Instantly in real-time using Webhooks.
 
----
-
 ## Setup Connection
 
-To receive data from Instantly, you must use **Webhooks**. This is required because Instantly does not support date-time filters, making it impossible to check for new data using standard polling methods. Instead, you must configure Instantly to push data directly to your Appse AI flow via Webhooks.
+To receive data from Instantly, you must use **Webhooks**. This is required because Instantly does not support date-time filters, making it impossible to check for new data using standard polling methods. Instead, you must configure Instantly to push data directly to your appse ai flow via Webhooks.
 
 ### Step-by-Step Guide
 
-**1. Get Webhook URL from Appse AI**
+**1. Get Webhook URL from appse ai**
 
-- In your Appse AI flow, add a Webhook Node. [**Learn more about Webhook Node**](/platform/key-concepts/nodes/trigger/webhook).
+- In your appse ai flow, add a Webhook Node. [**Learn more about Webhook Node**](/platform/key-concepts/nodes/trigger/webhook).
 
-<img src="/img/credentials/instantly/appse-webhook-node.png" alt="Appse AI Webhook Node" width="300"/>
+<img src="/img/credentials/instantly/appse-webhook-node.png" alt="appse ai Webhook Node" width="300"/>
 
 - Copy the **Webhook URL** provided in the node configuration.
 
-<img src="/img/credentials/instantly/appse-webhook-config.png" alt="Appse AI Webhook Configuration" width="700"/>
+<img src="/img/credentials/instantly/appse-webhook-config.png" alt="appse ai Webhook Configuration" width="700"/>
 
 **2. Navigate to Instantly Integrations**
 
@@ -39,7 +37,7 @@ To receive data from Instantly, you must use **Webhooks**. This is required beca
 
 **4. Configure Webhook Details**
 
-- **Webhook URL**: Paste the URL you copied from the Appse AI Webhook Node.
+- **Webhook URL**: Paste the URL you copied from the appse ai Webhook Node.
 
 <img src="/img/credentials/instantly/instantly-add-webhook-modal.png" alt="Instantly Add Webhook Modal" width="700"/>
 
@@ -51,7 +49,7 @@ To receive data from Instantly, you must use **Webhooks**. This is required beca
 
 **5. Receive Data**
 
-- Once configured, Instantly will automatically send data to your Appse AI flow whenever the selected event occurs.
+- Once configured, Instantly will automatically send data to your appse ai flow whenever the selected event occurs.
 
 ---
 
