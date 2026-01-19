@@ -53,6 +53,17 @@ To receive data from Instantly, you must use **Webhooks**. This is required beca
 
 ---
 
+## Triggers and Actions
+
+Here is a list of the available actions and triggers for Instantly:
+
+### Actions
+
+- **Patch Campaign** - Update campaign settings by ID.
+- **Patch Lead** - Update lead details by ID.
+
+---
+
 ## Need Help?
 
-If you need assistance setting up webhooks, reach out to our support team at hello@appse.ai
+If you need assistance setting up webhooks, reach out to our support team at [hello@appse.ai](mailto:hello@appse.ai)
