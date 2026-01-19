@@ -152,5 +152,3 @@ Treat your API key like a password. Do not share it publicly or commit it to sou
 ## Support
 
 Need help? Contact our support team at **hello@appse.ai**
-
- 
