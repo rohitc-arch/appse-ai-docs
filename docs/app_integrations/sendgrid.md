@@ -1,10 +1,9 @@
 ---
 title: "SendGrid"
-slug : /app-integrations/sendgrid/
+slug: /app-integrations/sendgrid/
 ---
 
 SendGrid is a cloud-based email delivery platform that provides reliable transactional and marketing email services. Integrating SendGrid enables automated email notifications and communication flows.
-
 
 ## Set Up Credential
 
@@ -18,11 +17,10 @@ To create credentials for SendGrid, you must have a SendGrid account.
 
 You’ll be asked to fill in the following details:
 
-| Field             | Description                                      |
-|-------------------|--------------------------------------------------|
-| Connection Name   | A name to help you identify this connection      |
-| API Key           | Your personal API Key from SendGrid              |
-
+| Field           | Description                                 |
+| --------------- | ------------------------------------------- |
+| Connection Name | A name to help you identify this connection |
+| API Key         | Your personal API Key from SendGrid         |
 
 ### Step-by-Step Guide
 
@@ -77,3 +75,18 @@ Before you can send emails, SendGrid requires you to verify your sender identity
 <img src="\img\credentials\sendgrid\sender-verification.png" alt="APPSeAI SendGrid Sender Verification" width="700"/>
 
 ---
+
+## Triggers and Actions
+
+Here is a list of the available actions and triggers for SendGrid:
+
+### Actions
+
+- **Send Email** - Send an email using SendGrid. This action supports advanced features like multiple personalizations.
+- **Send Email Message** - Send an email message to recipients. A simpler action for sending emails.
+
+---
+
+## Need Help?
+
+If you’re unsure about any field or face connection issues, reach out to our support team at [hello@appse.ai](mailto:hello@appse.ai)
