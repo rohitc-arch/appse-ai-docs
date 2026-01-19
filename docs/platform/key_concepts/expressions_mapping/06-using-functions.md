@@ -53,8 +53,8 @@ Built-in functions for common data manipulation tasks in APPSeAI expressions.
 | `contains()` | `{{ contains($payload.orderId, 'ORD') }}` | `true` | Check substring |
 | `starts_with()` | `{{ starts_with($payload.orderId, 'ORD') }}` | `true` | Check prefix |
 | `ends_with()` | `{{ ends_with($payload.orderId, '001') }}` | `true` | Check suffix |
-| `substringBefore()` | `{{ substringBefore($payload.orderId, '-') }}` | `"ORD"` | Substring before
-| `substringAfter()` | `{{ substringAfter($payload.orderId, '-') }}` | `"001"` | Substring after
+| `substringBefore()` | `{{ substringBefore($payload.orderId, '-') }}` | `"ORD"` | Substring before delimiter |
+| `substringAfter()` | `{{ substringAfter($payload.orderId, '-') }}` | `"001"` | Substring after delimiter |
 | `split()` | `{{ split($payload.orderId, '-') }}` | `["ORD","001"]` | Split string |
 
 ## Type Functions
