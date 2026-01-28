@@ -257,6 +257,8 @@ If validation fails, an error message will be displayed so you can correct the c
   </TabItem>
 </Tabs>
 
+---
+
 ## Webhook Configuration
 
 To receive data from **Zoho Books**, you must use Webhooks. This is required because **Zoho Books** does not support date-time filters, making it impossible to check for new data using standard polling methods. Instead, you must configure **Zoho Books** to push data directly to your appse ai flow via Webhooks.
