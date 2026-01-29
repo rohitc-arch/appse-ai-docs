@@ -160,7 +160,7 @@ const config: Config = {
       //     ],
       //   },
       // ],
-      copyright: `Copyright © ${new Date().getFullYear()} APPSeAI. `,
+      copyright: `Copyright © ${new Date().getFullYear()} APPSeCONNECT. `,
     },
     prism: {
       theme: prismThemes.github,
