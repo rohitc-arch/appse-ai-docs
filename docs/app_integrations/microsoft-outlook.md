@@ -52,19 +52,19 @@ To add an Outlook credential, simply enter a connection name and click the Save 
 This will open a pop-up window displaying a list of your Microsoft accounts, from which you can select the account you want to use.
 Then you can proceed by selecting the **Microsoft account or organization** you want to connect with Appse AI.
 
-<img src="\img\credentials\microsoft-outlook\choose_account.png" alt="APPSeAI microsoft outlook choose account" width="700"/>
+<img src="/img/credentials/microsoft-outlook/choose_account.png" alt="APPSeAI microsoft outlook choose account" width="700"/>
 
 If the required account is not already added, click **Use another account**. This will redirect you to the Microsoft sign-in page to authenticate using a different account.
 
-<img src="\img\credentials\microsoft-outlook\sign_in_page.png" alt="APPSeAI microsoft sign in page" width="700"/>
+<img src="/img/credentials/microsoft-outlook/sign_in_page.png" alt="APPSeAI microsoft sign in page" width="700"/>
 
 Enter your Outlook email id and click **Next** to continue.
 
-<img src="\img\credentials\microsoft-outlook\sign_in.png" alt="Enter email" width="700"/>
+<img src="/img/credentials/microsoft-outlook/sign_in.png" alt="Enter email" width="700"/>
 
 Enter password and click **Sign In** button to continue.
 
-<img src="\img\credentials\microsoft-outlook\enter_password.png" alt="Enter password" width="700"/>
+<img src="/img/credentials/microsoft-outlook/enter_password.png" alt="Enter password" width="700"/>
 
 Once the sign-in is successful, the authorization window will automatically close, and your Outlook account will be securely connected.
 
