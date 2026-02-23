@@ -119,7 +119,7 @@ Click on Connect App to connect the credential.
 
 ## Triggers and Actions
 
-Here is a list of the available actions and triggers for Hubspot:
+Here is a list of the available actions and triggers for HubSpot:
 
 ### Triggers
 
