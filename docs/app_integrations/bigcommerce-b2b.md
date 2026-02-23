@@ -50,7 +50,7 @@ Here is a recommended table for the required OAuth scopes:
 | Content                                      | None      |
 | Checkout Content                             | None      |
 | Customers                                    | modify    |
-| Coustomers login                             | None      |
+| Customers login                              | None      |
 | Information & settings                       | None      |
 | Marketing                                    | None      |
 | Orders                                       | modify    |
