@@ -98,23 +98,23 @@ Paste the credentials in appse.ai's Zoho Projects credential form:
 ### Step 10: Configure Multi-Data Center Settings
 Go to settings and make sure to select the checkbox for 'Use the same OAuth credentials for all data centers':
 
-<img src="\img\credentials\zoho-projects\select_all.png" alt="select all" width="700"/>
+<img src="/img/credentials/zoho-projects/select_all.png" alt="select all" width="700"/>
 
 Click on 'Ok' to use the same credentials for all data centers:
 
-<img src="\img\credentials\zoho-projects\ok_multi_dc.png" alt="ok multi dc" width="700"/>
+<img src="/img/credentials/zoho-projects/ok_multi_dc.png" alt="ok multi dc" width="700"/>
 
 ## Final Authorization
 
 ### Step 11: Save and Authorize
 Go to appse.ai's [credential page](https://workflow.appse.ai/credentials) and select Zoho Projects' credential. Click on 'Save & Authorise' to continue:
 
-<img src="\img\credentials\zoho-projects\save_authorise.png" alt="save & authorize" width="700"/>
+<img src="/img/credentials/zoho-projects/save_authorise.png" alt="save & authorize" width="700"/>
 
 ### Step 12: Grant Permissions
 Select the checkbox to allow your app to access the following data from your Zoho account:
 
-<img src="\img\credentials\zoho-projects\accept_allow.png" alt="accept & allow" width="700"/>
+<img src="/img/credentials/zoho-projects/accept_allow.png" alt="accept & allow" width="700"/>
 
 ## Completion
 
