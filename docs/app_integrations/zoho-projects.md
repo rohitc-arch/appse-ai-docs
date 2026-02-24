@@ -19,7 +19,7 @@ To get started with Zoho Projects, you need to set credentials for it. Click on 
 
 <img src="\img\credentials\zoho-projects\create_a_new_credential.png" alt="create a new credential screen" width="700"/>
 
-The credential popup will open with various options
+The credential popup will open with various options.
 
 ### Regional Configuration
 
