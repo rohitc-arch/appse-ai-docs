@@ -83,7 +83,7 @@ Select 'Server-based applications':
 3. Paste it in 'Authorized Redirect URIs'
 4. Click 'Create' after filling in all fields
 
-<img src="\img\credentials\zoho-projects\callback_url.png" alt="call back url" width="700"/>
+<img src="\img\credentials\zoho-projects\callback_url.png" alt="callback URL" width="700"/>
 <img src="\img\credentials\zoho-projects\create_new_client.png" alt="create new client" width="700"/>
 
 ### Step 8: Copy Credentials
