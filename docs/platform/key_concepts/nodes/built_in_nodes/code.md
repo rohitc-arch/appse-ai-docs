@@ -231,4 +231,399 @@ return { ...$payload, status: "Active" };
 const filtered = $payload.filter(item => item.active);
 const mapped = $payload.map(item => ({ ...item, seen: true }));
 ```
+## Real Integration Use Cases
 
+Select the appropriate tab below based on your desired **Mode** (Run Once for All Item or Run Once for Each item) :
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+
+<TabItem value="run-all" label="Run Once for All Items">
+
+### Use Case: Daily SAP SL Order Summary
+
+**Scenario**:  
+All SAP SL orders created in a day are received as an array.  
+We generate a **daily sales summary report** and notify in Microsoft Teams with:
+
+- Total revenue  
+- Total number of orders  
+- International order count  
+- Order IDs  
+- Top-selling product  
+
+<img src="\img\platform\key-concepts\nodes\built-in\code\orderSummaryFlow.png" alt="connect html source" width="700"/>
+
+---
+
+### Why Run Once for All Items?
+
+- `$payload` is an **Array of all orders**
+- The code runs **only once**
+- Since aggregation is required (summing totals, counting, finding max product), we must manually loop through all records.
+
+> Aggregation requires iterating through the entire dataset.
+
+---
+
+### Example Code
+
+```javascript
+let totalRevenue = 0;
+let internationalCount = 0;
+let orderIds = [];
+let productSales = {};
+let currency = "$";
+
+// Single loop to handle everything
+for (let order of $payload) {
+    if (!order) continue;
+
+    // 1. Revenue & Currency
+    if (order.DocTotal) {
+      const docTotal = order.DocTotal; 
+      if(order.DocCurrency="$"){
+        totalRevenue +=  Math.round(docTotal) || 0;
+      }
+      else{
+        totalRevenue +=  Math.round(docTotal)/82 || 0
+      }
+  }
+
+    // 2. Order IDs
+    if (order.DocNum !== undefined) {
+        orderIds.push(order.DocNum);
+    }
+
+    // 3. International Check
+    // Using optional chaining to prevent errors if TaxExtension is missing
+    let country = order.TaxExtension?.CountryS || "";
+    if(country == null || country == ""){
+      country = "US";
+    }
+  
+    if (country !== "US") {
+        internationalCount++;
+    }
+
+    // 4. Product Sales
+    if (order.DocumentLines) {
+        for (let line of order.DocumentLines) {
+            let productName = line.ItemDescription || line.ItemCode || "Unknown";
+            let qty = line.Quantity || 0;
+            productSales[productName] = (productSales[productName] || 0) + qty;
+        }
+    }
+    else{
+      continue
+    }
+}
+
+// Find Top Product
+let topProduct = "";
+let maxQty = 0;
+for (let [name, qty] of Object.entries(productSales)) {
+    if (qty > maxQty) {
+        maxQty = qty;
+        topProduct = name;
+    }
+}
+
+// ... rest of your message and return logic
+ 
+var message =
+    "<b>Daily Report:</b>
+
+" +
+    "We processed " + $payload.length +
+    " orders today for a total of " + currency + totalRevenue + ".
+" +
+    "International orders: " + internationalCount + ".
+" +
+    "Order IDs Processed: " + orderIds.join(", ") + ".
+" +
+    "Top Product: " + topProduct + " (" + maxQty + " units).";
+;
+
+return [{
+        json: {
+            total_orders: $payload.length,
+            total_revenue: totalRevenue,
+            international_orders: internationalCount,
+            order_ids: orderIds,
+            top_selling_product: topProduct,
+            top_product_quantity: maxQty,
+            message: message
+        }
+    }];
+
+```
+
+**Output**
+```JSON
+[
+  {
+    "_pair_index": 0,
+    "json": {
+      "total_orders": 10,
+      "total_revenue": 3947397,
+      "international_orders": 0,
+      "order_ids": [
+        2103,
+        2159,
+        2160,
+        2199,
+        2200,
+        2201,
+        2202,
+        2203,
+        2204,
+        2205
+      ],
+      "top_selling_product": "Biker Jacket",
+      "top_product_quantity": 100,
+      "message": "<b>Daily Report:</b>
+
+We processed 10 orders today for a total of $3947397.
+International orders: 0.
+Order IDs Processed: 2103, 2159, 2160, 2199, 2200, 2201, 2202, 2203, 2204, 2205.
+Top Product: Biker Jacket (100 units)."
+    }
+  }
+]
+```
+
+</TabItem>
+
+<TabItem value="run-each" label="Run Once for Each Item">
+
+### Use Case: Convert Currency Symbols to ISO Codes
+
+**Scenario 1**:  
+SAP Service Layer sends Item prices using currency symbols (`$`, `€`, `£`, `₹`).  
+Pipedrive requires ISO currency codes (`USD`, `EUR`, `GBP`, `INR`).  
+
+We transform each item individually before sending to Pipedrive.
+
+<img src="\img\platform\key-concepts\nodes\built-in\code\convertCurrencySymbolWorkflow.png" alt="connect html source" width="700"/>
+
+---
+
+### Why Run Once for Each Item?
+
+- `$payload` is a **Single Object**
+- The engine automatically runs the code once per item
+- No manual loop over all items is required
+- Ideal for record-level transformation
+
+> This mode is best when modifying one record independently of others.
+
+---
+
+### Example Code
+
+```javascript
+const item = $payload;
+if (Array.isArray(item.ItemPrices)) {
+  item.ItemPrices = item.ItemPrices.map(price => {
+    if (price.Currency) {
+      switch (price.Currency.trim()) {
+        case "$":
+          price.Currency = "USD";
+          break;
+        case "€":
+          price.Currency = "EUR";
+          break;
+        case "£":
+          price.Currency = "GBP";
+          break;
+        case "₹":
+          price.Currency = "INR";
+          break;
+        default:
+          // keep original currency
+          break;
+      }
+    }
+    return price;
+  });
+}
+return item;
+
+```
+**Output**
+
+```JSON
+  "ItemPrices": [
+      {
+        "PriceList": 1,
+        "Price": 4544.45,
+        "Currency": "USD",
+        "AdditionalPrice1": 0,
+        "AdditionalCurrency1": "",
+        "AdditionalPrice2": 0,
+        "AdditionalCurrency2": "",
+        "BasePriceList": 1,
+        "Factor": 1,
+        "UoMPrices": []
+      }
+  ]
+```
+ ---
+
+ ### Use Case: ShipStation Order Processing
+
+**Scenario 2**:  
+Order data is received in the workflow. Before creating an order in ShipStation, the data must be enriched and transformed to meet ShipStation's requirements.
+
+The transformation includes:
+
+- Converting item weight from kilograms to grams  
+- Identifying whether the shipment is Domestic or International  
+- Calculating an international shipping surcharge  
+
+<img src="\img\platform\key-concepts\nodes\built-in\code\shipstationWorkflow.png" alt="connect html source" width="700"/>
+
+---
+
+### Why Run Once for Each Item?
+
+- `$payload` represents **one order**
+- The code runs once per order
+- No aggregation across multiple orders is required
+- Each order is processed independently
+
+> This mode is ideal when enriching or formatting a single record before sending it to another system.
+
+---
+
+### Example Code
+
+```javascript
+const data = $payload;
+
+if (!Array.isArray(data.items) || data.items.length === 0) {
+  return {};
+}
+
+const order = data.items[0];
+const country = order.shippingAddress?.country || "";
+
+if (!Array.isArray(order.lineItems?.nodes)) {
+  return {};
+}
+
+const processedLineItems = order.lineItems.nodes.map(item => {
+
+  const weightKg = item.weight || 0;
+  const weightGrams = Math.round(weightKg * 1000);
+
+  let shipping_category = "Domestic";
+  let international_surcharge = 0;
+
+  if (country !== "USA") {
+    shipping_category = "International";
+    international_surcharge = 20 + (5 * weightKg);
+  }
+
+  return {
+    ...item,
+    weight_grams: weightGrams,
+    shipping_category,
+    international_surcharge,
+    shipping_country: country
+  };
+});
+
+return { processedLineItems };
+```
+**Output**
+```JSON
+[
+  {
+    "_pair_index": 0,
+    "processedLineItems": [
+      {
+        "id": "gid://shopify/LineItem/17761653424437",
+        "sku": "AB5353",
+        "weight": 3.55,
+        "quantity": 1,
+        "title": "Armani Boots",
+        "name": "Armani Boots",
+        "originalUnitPriceSet": {
+          "presentmentMoney": {
+            "amount": "34343.43"
+          }
+        },
+        "taxLines": [
+          {
+            "title": "CGST",
+            "rate": 0.1,
+            "priceSet": {
+              "presentmentMoney": {
+                "amount": "3434.35"
+              }
+            }
+          },
+          {
+            "title": "IGSTKA",
+            "rate": 0.091,
+            "priceSet": {
+              "presentmentMoney": {
+                "amount": "3125.25"
+              }
+            }
+          }
+        ],
+        "weight_grams": 3550,
+        "shipping_category": "International",
+        "international_surcharge": 37.75,
+        "shipping_country": "India"
+      },
+      {
+        "id": "gid://shopify/LineItem/17761653457205",
+        "sku": "LB343",
+        "weight": 4.44,
+        "quantity": 1,
+        "title": "Leather Boots",
+        "name": "Leather Boots",
+        "originalUnitPriceSet": {
+          "presentmentMoney": {
+            "amount": "343.43"
+          }
+        },
+        "taxLines": [
+          {
+            "title": "CGST",
+            "rate": 0.1,
+            "priceSet": {
+              "presentmentMoney": {
+                "amount": "34.34"
+              }
+            }
+          },
+          {
+            "title": "IGSTKA",
+            "rate": 0.091,
+            "priceSet": {
+              "presentmentMoney": {
+                "amount": "31.25"
+              }
+            }
+          }
+        ],
+        "weight_grams": 4440,
+        "shipping_category": "International",
+        "international_surcharge": 42.2,
+        "shipping_country": "India"
+      }
+    ]
+  }
+]
+```
+</TabItem>
+
+</Tabs>
+ 
