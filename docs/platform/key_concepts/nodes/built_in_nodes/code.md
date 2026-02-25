@@ -47,7 +47,7 @@ The Code Node operates in two modes, which determine how input data is processed
     // ]
     ```
 
-2.  **Run for Each Item**:
+2.  **Run Once for Each Item**:
     *   **Input**: Receives a **Single Object** for each item. The code runs multiple times (once per item).
     *   **Output**: Must return a **Single Object**.
     *   **Ideal for**: Mapping fields, formatting values, or adding new properties to each item independently.
@@ -107,7 +107,7 @@ This is the main variable containing your input data.
     `$payload` is an **Array** containing **all items** returned by the previous node. You have access to the entire dataset at once.
     *   *Example:* `[ { "id": 1, "name": "Ali" }, { "id": 2, "name": "Bob" } ]`
 
-*   **In "Run for Each Item" mode**:
+*   **In "Run Once for Each Item" mode**:
     `$payload` is a **Single Object** representing **one item** from the list. The code runs individually for each item in the dataset.
     *   *Example:* `{ "id": 1, "name": "Ali" }` (First execution) -> `{ "id": 2, "name": "Bob" }` (Second execution)
 
@@ -167,7 +167,7 @@ const matchingUser = users.find(u => u.id === $payload.userId);
 
 **Scenario**: You have a list of orders and want to format the date and calculate the total price including tax.
 
-**Mode**: Run for Each Item
+**Mode**: Run Once for Each Item
 
 ```javascript
 // Input: { "price": 100, "date": "2023-10-01" }
@@ -233,7 +233,7 @@ const mapped = $payload.map(item => ({ ...item, seen: true }));
 ```
 ## Real Integration Use Cases
 
-Select the appropriate tab below based on your desired **Mode** (Run Once for All Item or Run Once for Each item) :
+Select the appropriate tab below based on your desired **Mode** (Run Once for All Item or Run Once for Each Item) :
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -251,7 +251,6 @@ We generate a **daily sales summary report** and notify in Microsoft Teams with:
 - Total revenue  
 - Total number of orders  
 - International order count  
-- Order IDs  
 - Top-selling product  
 
 <img src="\img\platform\key-concepts\nodes\built-in\code\orderSummaryFlow.png" alt="connect html source" width="700"/>
@@ -273,7 +272,6 @@ We generate a **daily sales summary report** and notify in Microsoft Teams with:
 ```javascript
 let totalRevenue = 0;
 let internationalCount = 0;
-let orderIds = [];
 let productSales = {};
 let currency = "$";
 
@@ -292,12 +290,7 @@ for (let order of $payload) {
       }
   }
 
-    // 2. Order IDs
-    if (order.DocNum !== undefined) {
-        orderIds.push(order.DocNum);
-    }
-
-    // 3. International Check
+    // 2. International Check
     // Using optional chaining to prevent errors if TaxExtension is missing
     let country = order.TaxExtension?.CountryS || "";
     if(country == null || country == ""){
@@ -308,7 +301,7 @@ for (let order of $payload) {
         internationalCount++;
     }
 
-    // 4. Product Sales
+    // 3. Product Sales
     if (order.DocumentLines) {
         for (let line of order.DocumentLines) {
             let productName = line.ItemDescription || line.ItemCode || "Unknown";
@@ -334,16 +327,10 @@ for (let [name, qty] of Object.entries(productSales)) {
 // ... rest of your message and return logic
  
 var message =
-    "<b>Daily Report:</b>
-
-" +
+    "<b>Daily Report:</b><br><br>" +
     "We processed " + $payload.length +
-    " orders today for a total of " + currency + totalRevenue + ".
-" +
-    "International orders: " + internationalCount + ".
-" +
-    "Order IDs Processed: " + orderIds.join(", ") + ".
-" +
+    " orders today for a total of " + currency + totalRevenue + ".<br>" +
+    "International orders: " + internationalCount + ".<br>" +
     "Top Product: " + topProduct + " (" + maxQty + " units).";
 ;
 
@@ -352,7 +339,6 @@ return [{
             total_orders: $payload.length,
             total_revenue: totalRevenue,
             international_orders: internationalCount,
-            order_ids: orderIds,
             top_selling_product: topProduct,
             top_product_quantity: maxQty,
             message: message
@@ -370,26 +356,9 @@ return [{
       "total_orders": 10,
       "total_revenue": 3947397,
       "international_orders": 0,
-      "order_ids": [
-        2103,
-        2159,
-        2160,
-        2199,
-        2200,
-        2201,
-        2202,
-        2203,
-        2204,
-        2205
-      ],
       "top_selling_product": "Biker Jacket",
       "top_product_quantity": 100,
-      "message": "<b>Daily Report:</b>
-
-We processed 10 orders today for a total of $3947397.
-International orders: 0.
-Order IDs Processed: 2103, 2159, 2160, 2199, 2200, 2201, 2202, 2203, 2204, 2205.
-Top Product: Biker Jacket (100 units)."
+      "message": "<b>Daily Report:</b><br><br>We processed 10 orders today for a total of $3947397.<br>International orders: 0.<br>Top Product: Biker Jacket (100 units)."
     }
   }
 ]
