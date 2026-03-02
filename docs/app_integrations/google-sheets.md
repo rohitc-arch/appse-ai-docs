@@ -266,6 +266,7 @@ Copy this value and paste it into the Spreadsheet ID field in the action configu
 
 The **Get Rows from Google Sheet** action retrieves data from a specified range in a Google Sheet and returns each row as a structured object.  
 This action is commonly used to **read spreadsheet data**, **fetch records**, or **use Google Sheets as a data source** in workflows.
+> **Note:** Regardless of the configured Start Cell and End Cell, the first row of the spreadsheet is always treated as the header row. The column names in this row are used as the JSON field names in the output array of objects.
 
 ---
 
@@ -275,7 +276,7 @@ This action is commonly used to **read spreadsheet data**, **fetch records**, or
 |---------------|------------|
 | Select Spreadsheet | Select the required spreadsheet from the dropdown |
 | Sheet Name     | The name of the sheet (tab) inside the spreadsheet |
-| Start Cell     | The starting cell of the range to fetch. Make sure to include the column headers also. (e.g., `A1`) |
+| Start Cell     | The starting cell of the range to fetch. (e.g., `A1`) |
 | End Cell       | The ending cell of the range (Recommended: `ZZ` This allows the engine to read data until the last populated cell automatically) |
 
 ---
