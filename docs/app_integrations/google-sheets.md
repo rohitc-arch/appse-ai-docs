@@ -71,13 +71,13 @@ You’ll need to provide the following details while creating the credential:
 3. Click **Enable**.
    <img src="\img\credentials\google-sheets\GS7.png"  width="700"/>
 
-### Enable Google Drive API (Recommended)
+### Enable Google Drive API
 
 1. In the API Library, search for **Google Drive API**.
 2. Click **Enable**.
    <img src="\img\credentials\google-sheets\GS8.png"  width="700"/>
 
-> Enabling Google Drive API allows better file access and spreadsheet management.
+> Enabling the Google Drive API is mandatory to automatically fetch and display all spreadsheets linked to your Google Drive in the Select Spreadsheet dropdown during action configuration.
 
 ---
 
@@ -155,13 +155,14 @@ Click **Next**.
 
    ### Select the following scopes:
 
-   #### Required
-   https://www.googleapis.com/auth/spreadsheets
+   - https://www.googleapis.com/auth/spreadsheets
       <img src="\img\credentials\google-sheets\GS19.png" width="700"/>
 
-   #### Optional (Recommended)
-   https://www.googleapis.com/auth/drive
+   - https://www.googleapis.com/auth/drive
       <img src="\img\credentials\google-sheets\GS20.png" width="700"/>
+
+      
+   > Selecting the required scopes ensures that linked Google Sheets are properly fetched and displayed during configuration.   
 
 4. Click **Update**
    <img src="\img\credentials\google-sheets\GS21.png" width="700"/>
