@@ -36,7 +36,7 @@ The **AI Agent Node** consists of the following sub-nodes:
 ### Steps to add Agent node
 > **Note:** An AI Agent node can only be added in a non-trigger position. Please add the Trigger node first, then try adding the AI Agent node.
 
-1. Open the select node popup by clicing on the plus icon from the workflow designer.
+1. Open the select node popup by clicking on the plus icon from the workflow designer. Alternatively, you can click any navigation button in the top-right section (e.g., Most Popular, Apps, etc.).
 2. Navigate to the **AI Agent, LLM and Tools** section.
     <img src="\img\platform\key-concepts\nodes\built-in\ai-agent\agent1.png"  width="700"/>
 3. Select **AI Agent Node**.
