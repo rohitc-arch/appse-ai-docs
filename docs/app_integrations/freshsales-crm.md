@@ -110,9 +110,7 @@ Here is a list of the available triggers and actions for Freshsales:
 
 - **Update Contact** — Update the details of an existing contact in Freshsales CRM using the contact's unique ID.
 
-- **Get Contact** — Retrieve the details of a specific contact using their unique ID.
-
-- **Get Contacts** — Retrieve a list of contacts from a specific view in Freshsales CRM.
+- **Get Contacts** — Retrieve a list of all contacts from Freshsales CRM.
 
 - **Get Contact by View** — Fetch contacts from a specific saved view in Freshsales CRM.
 
@@ -121,8 +119,6 @@ Here is a list of the available triggers and actions for Freshsales:
 - **Create Account** — Create a new account (company) in Freshsales CRM.
 
 - **Update Account** — Update the details of an existing account using the account's unique ID.
-
-- **Get Account** — Retrieve the details of a specific account using its unique ID.
 
 - **Get Accounts** — Retrieve a list of accounts from Freshsales CRM.
 
@@ -150,8 +146,6 @@ Here is a list of the available triggers and actions for Freshsales:
 
 - **Get All Tasks** — Fetch a list of all tasks from Freshsales CRM.
 
-- **Get Tasks** — Fetch a list of tasks filtered by status (Open or Completed).
-
 - **Mark Task as Done** — Mark an existing task as completed using the task's unique ID.
 
 #### Products
@@ -172,7 +166,7 @@ Here is a list of the available triggers and actions for Freshsales:
 
 - **Get Currencies** — Retrieve all available currencies configured in your Freshsales account. Useful for setting prices in the correct currency.
 
-- **Get Views** — Retrieve all saved views available in your Freshsales account.
+- **Get Views** — Fetch all available view IDs for Contacts, Accounts or Deals in Freshsales CRM.
 
 ---
 
