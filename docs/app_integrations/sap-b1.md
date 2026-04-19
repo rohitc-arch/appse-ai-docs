@@ -110,7 +110,18 @@ Click on **Continue** , then **Run** the node.
 ----------------
 
 #### Result
-   <img src="/img/credentials/sap-b1/SAP-TIC1.jpg" width="700" />
+```json
+[
+  {
+    "ItemCode": "ITM-1001",
+    "ItemName": "Sample Item",
+    "CreateDate": "2026-03-27",
+    "UpdateDate": "2026-03-27",
+    "InventoryItem": "tYES",
+    "Valid": "tYES"
+  }
+]
+```
    
 
 
@@ -143,7 +154,20 @@ Click on **Continue** , then **Run** the node.
 --------------
 
 #### Result
-   <img src="/img/credentials/sap-b1/SAP-TIU2.jpg" width="700" />
+```json
+[
+  {
+    "ItemCode": "ITM-1001",
+    "ItemName": "Sample Item - Updated",
+    "UpdateDate": "2026-03-27",
+    "UpdatedFields": [
+      "ItemName",
+      "Price",
+      "WarehouseCode"
+    ]
+  }
+]
+```
 
 ------
 
@@ -175,8 +199,22 @@ Click on **Continue** , then **Run** the node.
 ------------
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-TOC3.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 11464,
+    "DocNum": 503,
+    "CardCode": "BC6129916",
+    "DocDate": "2026-03-27",
+    "DocumentLines": [
+      {
+        "ItemCode": "BCB2B0001",
+        "Quantity": 5
+      }
+    ]
+  }
+]
+```
 
 -------
 
@@ -207,7 +245,24 @@ Click on **Continue** , then **Run** the node.
 --------------
 
 #### Result
-   <img src="/img/credentials/sap-b1/SAP-TQC4.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 503,
+    "DocNum": 221,
+    "CardCode": "BC6129916",
+    "DocDate": "2026-03-27",
+    "NumAtCard": "REF-145",
+    "DocumentLines": [
+      {
+        "ItemCode": "BCB2B0001",
+        "Quantity": 3,
+        "UnitPrice": 100
+      }
+    ]
+  }
+]
+```
 
 -------
 
@@ -239,8 +294,17 @@ Click on **Continue** , then **Run** the node.
 --------------
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-TBC5.jpg" width="700" />
+```json
+[
+  {
+    "CardCode": "BP-001",
+    "CardName": "Joe Mark",
+    "Phone1": "9XXXXXXXXX",
+    "EmailAddress": "example@domain.com",
+    "CardType": "cCustomer"
+  }
+]
+```
 
 ### Business partners updated
 
@@ -269,9 +333,19 @@ Click on **Continue** , then **Run** the node.
 
 ------------------
 
-##3# Result
+#### Result
 
-   <img src="/img/credentials/sap-b1/SAP-TBU7.jpg" width="700" />
+```json
+[
+  {
+    "CardCode": "BP-001",
+    "CardName": "Joe Mark Updated",
+    "Phone1": "9XXXXXXXXX",
+    "EmailAddress": "example@domain.com",
+    "UpdateDate": "2026-03-27"
+  }
+]
+```
 
 --------
 
@@ -303,8 +377,17 @@ Click on **Continue** , then **Run** the node.
 ------------
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-TARC6.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 11462,
+    "DocNum": 715,
+    "CardCode": "BC6129916",
+    "DocTotal": 3500,
+    "DocDueDate": "2026-03-27"
+  }
+]
+```
 
 -------
 
@@ -336,8 +419,17 @@ Click on **Continue** , then **Run** the node.
 ------------
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-TCNC8.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 188,
+    "DocNum": 91,
+    "CardCode": "BC6129916",
+    "DocTotal": 500,
+    "BaseType": 13
+  }
+]
+```
 
 ---------
 
@@ -369,8 +461,22 @@ Click on **Continue** , then **Run** the node.
 -------------
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-TDNPC9.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 151,
+    "DocNum": 65,
+    "CardCode": "ZC0001",
+    "DocDate": "2026-03-27",
+    "DocumentLines": [
+      {
+        "ItemCode": "DIET002",
+        "Quantity": 10
+      }
+    ]
+  }
+]
+```
 
 --------
 
@@ -402,8 +508,17 @@ Click on **Continue** , then **Run** the node.
 ------------
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-TICPC10.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 522,
+    "DocNum": 301,
+    "CardCode": "ZC0001",
+    "PaymentMeans": "IncomingPayment",
+    "DocTotal": 500
+  }
+]
+```
 
 ---------
 
@@ -435,8 +550,17 @@ Click on **Continue** , then **Run** the node.
 ---------
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-TSCC11.jpg" width="700" />
+```json
+[
+  {
+    "ServiceCallID": 1024,
+    "CustomerCode": "CUST-001",
+    "Subject": "System Installation Issue",
+    "Status": "Open",
+    "Priority": "High"
+  }
+]
+```
 
 --------------
 
@@ -468,8 +592,22 @@ Click on **Continue** , then **Run** the node.
 ------------
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-TNRU12.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 205,
+    "DocNum": 88,
+    "CardCode": "ZC0001",
+    "Comments": "Damaged item returned",
+    "DocumentLines": [
+      {
+        "ItemCode": "DIET001",
+        "Quantity": 1
+      }
+    ]
+  }
+]
+```
 
 ---------------
 
@@ -501,8 +639,17 @@ Click on **Continue** , then **Run** the node.
 --------------
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-TAC13.jpg" width="700" />
+```json
+[
+  {
+    "ActivityCode": 9001,
+    "ActivityType": "Task",
+    "Subject": "Follow-up call",
+    "CreateDate": "2026-03-27",
+    "AssignedTo": "Sales Team"
+  }
+]
+```
 
 </TabItem>
 <TabItem value="actions" label="Action" default>
@@ -551,8 +698,16 @@ Click on **Continue**, then **Run** the node.
 -------------
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-AR-GETbyEmail15.jpg" width="700" />
+```json
+[
+  {
+    "CardCode": "BC6129916",
+    "CardName": "MAX6",
+    "EmailAddress": "example@domain.com",
+    "Phone1": "9XXXXXXXXX"
+  }
+]
+```
 
 ----------------
 
@@ -590,7 +745,17 @@ Click on **Continue**, then **Run** the node.
 -----------------
 
 #### Result
-   <img src="/img/credentials/sap-b1/SAP-AR- GET CC by CE email17.jpg" width="700" />
+```json
+[
+  {
+    "CardCode": "BC6129916",
+    "ContactEmployee": {
+      "Name": "CTP-002",
+      "EmailAddress": "example@domain.com"
+    }
+  }
+]
+```
 
 -----------
 
@@ -668,8 +833,28 @@ Click on **Continue**, then **Run** the node.
 -----------
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-AR-NBPD23.jpg" width="700" />
+```json
+[
+  {
+    "CardCode": "BP-001",
+    "CardName": "Joe Mark",
+    "Phone1": "9XXXXXXXXX",
+    "EmailAddress": "example@domain.com",
+    "BPAddresses": [
+      {
+        "AddressName": "ADD 001",
+        "AddressType": "bo_ShipTo"
+      }
+    ],
+    "ContactEmployees": [
+      {
+        "Name": "CTP-002",
+        "Position": "Manager"
+      }
+    ]
+  }
+]
+```
 
 -----------------
 
@@ -742,8 +927,16 @@ Click on **Continue**, then **Run** the node.
 --------------
 
 #### Result
-
-   <img src="" width="700" />
+```json
+[
+  {
+    "CardCode": "V10025",
+    "CardName": "Joe Mark",
+    "Phone1": "9XXXXXXXXX",
+    "EmailAddress": "example@domain.com"
+  }
+]
+```
 
 -----------------
 
@@ -808,8 +1001,24 @@ Click on **Continue**, then **Run** the node.
 -----------------
 
 #### Result
+```json
+[
+  {
+    "CardCode": "BP-001",
+    "CardName": "Joe Mark Updated",
+    "Phone1": "9XXXXXXXXX",
+    "EmailAddress": "example@domain.com",
+    "ContactEmployees": [
+      {
+        "Name": "CTP-002",
+        "JobTitle": "Sales Lead"
+      }
+    ]
+  }
+]
+```
 
-   <img src="/img/credentials/sap-b1/SAP-AR-UBP34.jpg" width="700" />
+<img src="/img/credentials/sap-b1/SAP-AR-UBP34.jpg" width="700" />
 
 ---------
 
@@ -847,8 +1056,17 @@ Click on **Continue**, then **Run** the node.
 ----------
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-AR-GIC37.jpg" width="700" />
+```json
+[
+  {
+    "ItemCode": "AN005",
+    "ItemName": "Demo Item",
+    "InventoryItem": "tYES",
+    "SalesItem": "tYES",
+    "PurchaseItem": "tYES"
+  }
+]
+```
 
 -------------
 
@@ -914,8 +1132,19 @@ Click on **Continue**, then **Run** the node.
    <img src="/img/credentials/sap-b1/SAP-AC-NIC43.jpg" width="700" />
 
 #### Result
-
-   <img src="/img/credentials/sap-b1/SAP-AR-CI47.jpg" width="700" />
+```json
+[
+  {
+    "ItemCode": "ITM-1001",
+    "ItemName": "Laptop Pro 15",
+    "InventoryUOM": "Nos",
+    "ItemGroupCode": 100,
+    "SalesItem": "tYES",
+    "PurchaseItem": "tYES",
+    "VatLiable": "tYES"
+  }
+]
+```
 
 -----------------
 
@@ -968,6 +1197,18 @@ Click on **Continue**, then **Run** the node.
 <img src="/img/credentials/sap-b1/SAP-AC-UI49.jpg" width="700" />
 
 #### Result
+```json
+[
+  {
+    "ItemCode": "ITM-1001",
+    "ItemName": "Laptop Pro 15",
+    "Remarks": "Updated model with enhanced features",
+    "ItemGroupCode": "Electronics",
+    "DefaultWarehouse": "WH-01",
+    "Price": 65000
+  }
+]
+```
 
 <img src="/img/credentials/sap-b1/SAP-AC-UI50.jpg" width="700" />
 
@@ -1007,8 +1248,17 @@ Click on **Continue**, then **Run** the node.
 ----------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-GETQbyNumAtCard53.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 503,
+    "DocNum": 221,
+    "NumAtCard": "664111000000373064",
+    "CardCode": "BC6129916",
+    "DocTotal": 300
+  }
+]
+```
 
 --------------
 
@@ -1074,8 +1324,26 @@ Click on **Continue**, then **Run** the node.
 <img src="/img/credentials/sap-b1/SAP-AC-NQTC59.jpg" width="700" />
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-NQTC60.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 503,
+    "DocNum": 221,
+    "DocDate": "2026-03-13",
+    "DocDueDate": "2026-08-04",
+    "CardCode": "BC6129916",
+    "NumAtCard": "REF-145",
+    "DocumentLines": [
+      {
+        "ItemCode": "BCB2B0001",
+        "Quantity": 3,
+        "UnitPrice": 100,
+        "TaxCode": "NT"
+      }
+    ]
+  }
+]
+```
 
 -----------------
 
@@ -1138,6 +1406,13 @@ Click on **Continue**, then **Run** the node.
 <img src="/img/credentials/sap-b1/SAP-AC-UQT66.jpg" width="700" />
 
 #### Result
+```json
+[
+  {
+    "value": "Quotation updated successfully"
+  }
+]
+```
 
 <img src="/img/credentials/sap-b1/SAP-AR-UQT67.jpg" width="700" />
 
@@ -1177,6 +1452,13 @@ Click on **Continue**, then **Run** the node.
 ------------------
 
 #### Result
+```json
+[
+  {
+    "value": "Quotation customer reference updated successfully"
+  }
+]
+```
 
 <img src="/img/credentials/sap-b1/SAP-AR-UQTbyNumAtCard70.jpg" width="700" />
 
@@ -1215,8 +1497,17 @@ Click on **Continue**, then **Run** the node.
 ------------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-GETSObyCRno73.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 11464,
+    "DocNum": 503,
+    "NumAtCard": "Ref-104",
+    "CardCode": "BC6129916",
+    "DocTotal": 1280
+  }
+]
+```
 
 ### Get order list by item code
 
@@ -1250,8 +1541,17 @@ Click on **Continue**, then **Run** the node.
 ----------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-GETSOLbyIC76.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 11464,
+    "DocNum": 503,
+    "ItemCode": "BCB2B0001",
+    "Quantity": 5,
+    "CardCode": "BC6129916"
+  }
+]
+```
 
 ---------
 
@@ -1316,8 +1616,24 @@ Freight or Expenses Code | Additional costs applied to the quotation such as fre
 ------------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AC-CNO82.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 11464,
+    "DocNum": 503,
+    "DocDate": "2026-04-01",
+    "DocDueDate": "2026-04-05",
+    "CardCode": "BC6129916",
+    "DocumentLines": [
+      {
+        "ItemCode": "BCB2B0001",
+        "Quantity": 5,
+        "UnitPrice": 123
+      }
+    ]
+  }
+]
+```
 
 ------------------
 
@@ -1367,8 +1683,19 @@ Click on **Continue**, then **Run** the node.
 ---------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-CS87.jpg" width="700" />
+```json
+[
+  {
+    "ObjectType": "orders",
+    "CardCode": "BC6129916",
+    "DocDate": "2026-04-01",
+    "DocDueDate": "2026-05-09",
+    "ServiceDescription": "Installation service",
+    "Quantity": 3,
+    "UnitPrice": 200
+  }
+]
+```
 
 ---------------------
 
@@ -1439,6 +1766,13 @@ Click on **Continue**, then **Run** the node.
 ------------
 
 ### Result
+```json
+[
+  {
+    "value": "Sales order updated successfully"
+  }
+]
+```
 
 <img src="/img/credentials/sap-b1/SAP-AR-UO94.jpg" width="700" />
 
@@ -1476,6 +1810,13 @@ Click on **Continue**, then **Run** the node.
 <img src="/img/credentials/sap-b1/SAP-AC-USOCRno96.jpg" width="700" />
 
 ### Result
+```json
+[
+  {
+    "value": "Sales order customer reference updated successfully"
+  }
+]
+```
 
 <img src="/img/credentials/sap-b1/SAP-AR-USOCRno97.jpg" width="700" />
 
@@ -1512,9 +1853,16 @@ Click on **Continue**, then **Run** the node.
 <img src="/img/credentials/sap-b1/SAP-AC-CSO99.jpg" width="700" />
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-CSO100.jpg" width="700" />
-<img src="/img/credentials/sap-b1/SAP-AR-CSO101.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 11464,
+    "Cancelled": "tYES",
+    "DocumentStatus": "bost_Close",
+    "Message": "Sales order cancelled successfully"
+  }
+]
+```
 
 --------------
 
@@ -1554,8 +1902,17 @@ Click on **Continue**, then **Run** the node.
 -------------
 
 #### Result
-
-<img src="" width="700" />
+```json
+[
+  {
+    "DocEntry": 11462,
+    "DocNum": 715,
+    "CardCode": "BC6129916",
+    "DocDate": "2026-04-01",
+    "DocTotal": 3955
+  }
+]
+```
 
 --------------
 
@@ -1588,8 +1945,24 @@ Click on **Continue**, then **Run** the node.
 -----------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-GETbyODRDocEntry112.jpg" width="700" />
+```json
+[
+  {
+    "Invoice": {
+      "DocEntry": 11462,
+      "DocNum": 715,
+      "BaseEntry": 11464
+    },
+    "DocumentLines": [
+      {
+        "ItemCode": "BCB2B0001",
+        "Quantity": 7,
+        "BaseType": 17
+      }
+    ]
+  }
+]
+```
 
 -------------
 
@@ -1622,8 +1995,17 @@ Click on **Continue**, then **Run** the node.
 <img src="/img/credentials/sap-b1/SAP-AC-GETINVbyNumAtCard108.jpg" width="700" />
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-GETINVbyNumAtCard-109.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 11462,
+    "DocNum": 715,
+    "NumAtCard": "REF-INV01",
+    "CardCode": "BC6129916",
+    "DocTotal": 3955
+  }
+]
+```
 
 -------------
 
@@ -1680,8 +2062,26 @@ Click on **Continue**, then **Run** the node.
 ------------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-CNINV106.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 11462,
+    "DocNum": 715,
+    "DocDate": "2026-04-01",
+    "DocDueDate": "2026-05-19",
+    "CardCode": "BC6129916",
+    "ReserveInvoice": "AR Invoice",
+    "DocumentLines": [
+      {
+        "ItemCode": "BCB2B0001",
+        "Quantity": 7,
+        "UnitPrice": 500,
+        "TaxCode": "NT"
+      }
+    ]
+  }
+]
+```
 
 ----------------
 
@@ -1742,9 +2142,24 @@ Click on **Continue**, then **Run** the node.
 -------------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-CRETURN111.jpg" width="700" />
-<img src="/img/credentials/sap-b1/SAP-AR-CRETURN112.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 205,
+    "DocNum": 88,
+    "CardCode": "ZC0001",
+    "Comments": "Damaged item returned",
+    "DocumentLines": [
+      {
+        "ItemCode": "DIET001",
+        "Quantity": 1,
+        "UnitPrice": 20,
+        "WarehouseCode": "01"
+      }
+    ]
+  }
+]
+```
 
 --------------------
 
@@ -1819,9 +2234,19 @@ Click on **Continue**, then **Run** the node.
 ---------------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-CSRVCCL128.jpg" width="700" />
-<img src="/img/credentials/sap-b1/SAP-AR-CSRVCCL129.jpg" width="700" />
+```json
+[
+  {
+    "ServiceCallID": 1024,
+    "CustomerCode": "CUST-001",
+    "CustomerName": "ABC Pvt Ltd",
+    "Subject": "System Installation Issue",
+    "Status": "Open",
+    "Priority": "High",
+    "ItemCode": "ITEM-001"
+  }
+]
+```
 
 --------------
 
@@ -1898,6 +2323,18 @@ Click on **Continue**, then **Run** the node.
 -----------
 
 #### Result
+```json
+[
+  {
+    "ServiceCallID": 1024,
+    "CustomerCode": "BC6129916",
+    "CustomerName": "MAX WELL",
+    "Status": "Closed",
+    "Priority": "Medium",
+    "Resolution": "Test"
+  }
+]
+```
 
 <img src="/img/credentials/sap-b1/SAP-AR-USRVCCL138.jpg" width="700" />
 <img src="/img/credentials/sap-b1/SAP-AR-USRVCCL139.jpg" width="700" />
@@ -1952,9 +2389,37 @@ Click on **Continue**, then **Run** the node.
 ------------
 
 #### Result
+```json
+[
+  {
+    "OpportunityName": "Demo Opportunity",
+    "CardCode": "BC6129916",
+    "CustomerName": "MAX6",
+    "StartDate": "2026-04-06",
+    "PredictedClosingDate": "2026-04-06",
+    "Status": "sos_Open",
+    "Remarks": "Test Demo",
+    "TotalAmountLocal": 80000,
+    "TotalAmounSystem": 80000,
+    "ClosingPercentage": 100,
+    "CurrentStageNo": 3,
+    "SalesPerson": -1,
 
-<img src="/img/credentials/sap-b1/SAP-AR-CNSOPP145.jpg" width="700" />
-<img src="/img/credentials/sap-b1/SAP-AR-CNSOPP146.jpg" width="700" />
+    "SalesOpportunitiesLines": [
+      {
+        "StageKey": 3,
+        "StartDate": "2026-04-06",
+        "ClosingDate": "2026-04-06",
+        "MaxLocalTotal": 80000,
+        "MaxSystemTotal": 80000,
+        "PercentageRate": 100,
+        "WeightedAmountLocal": 80000,
+        "WeightedAmountSystem": 80000
+      }
+    ]
+  }
+]
+```
 
 -------------
 
@@ -1995,8 +2460,13 @@ Click on **Continue**, then **Run** the node.
 ----------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-GCRNCYRATE149.jpg" width="700" />
+```json
+[
+  {
+    "value": "5.60"
+  }
+]
+```
 
 ------------
 
@@ -2036,8 +2506,17 @@ Click on **Continue**, then **Run** the node.
 -----------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-SCRNCYRATE152.jpg" width="700" />
+```json
+[
+  {
+    "Currency": "USD",
+    "RateDate": "2026-04-06",
+    "ExchangeRate": 3.9,
+    "Status": "success",
+    "Message": "Currency rate updated successfully"
+  }
+]
+```
 
 --------------------
 
@@ -2128,8 +2607,6 @@ The **Update Sales Tax Code** action is used to modify an existing tax code in t
 
 #### Select Credentials and Action Event
 
-<img src="" width="700" />
-
 Click on **Continue** button
 
 -------
@@ -2173,7 +2650,22 @@ Click on **Continue**, Then **Run** node
 ```json
 [
   {
-    "value": ""
+    "Code": "GST18",
+    "Name": "IMST",
+    "Rate": 6,
+    "ValidForAR": "tYES",
+    "ValidForAP": "tYES",
+    "Freight": "tNO",
+    "IsItemLevel": "tNO",
+    "FADebit": "tNO",
+    "SalesTaxCodes_Lines": [
+      {
+        "STCCode": "GST18",
+        "STACode": "CA",
+        "STAType": -3,
+        "EffectiveRate": 18
+      }
+    ]
   }
 ]
 ```
@@ -2215,8 +2707,28 @@ Click on **Continue**, then **Run** the node.
 --------------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-GETSPRCbyCRDCDE155.jpg" width="700" />
+```json
+[
+  {
+    "CardCode": "BC6129916",
+    "ItemCode": "BCB2B0001",
+    "PriceListNum": 1,
+    "SpecialPrice": 450,
+    "Currency": "$",
+    "DiscountPercent": 10,
+    "AutoUpdate": "tNO"
+  },
+  {
+    "CardCode": "BC6129916",
+    "ItemCode": "WOOCOM101",
+    "PriceListNum": 1,
+    "SpecialPrice": 500,
+    "Currency": "$",
+    "DiscountPercent": 5,
+    "AutoUpdate": "tNO"
+  }
+]
+```
 
 --------------
 
@@ -2275,8 +2787,45 @@ Click on **Continue**, then **Run** the node.
 ---------
 
 #### Result
-
-<img src="/img/credentials/sap-b1/SAP-AR-CRTNRQST165.jpg" width="700" />
+```json
+[
+  {
+    "DocEntry": 162,
+    "DocNum": 78,
+    "DocDate": "2026-04-30",
+    "CardCode": "BC6129916",
+    "CardName": "MAX6",
+    "Comments": "Return due to defect",
+    "DocTotal": 200,
+    "DocCurrency": "$",
+    "ContactPersonCode": 134,
+    "DocumentStatus": "bost_Open",
+    "DocumentLines": [
+      {
+        "LineNum": 0,
+        "ItemCode": "BCB2B0001",
+        "Quantity": 2,
+        "UnitPrice": 100,
+        "TaxCode": "NT",
+        "VatGroup": null,
+        "DiscountPercent": 0,
+        "WarehouseCode": "01",
+        "BaseType": -1,
+        "BaseEntry": null,
+        "BaseLine": null,
+        "LineTotal": 200
+      }
+    ],
+    "DocumentAdditionalExpenses": [
+      {
+        "LineNum": 0,
+        "ExpenseCode": 1,
+        "LineTotal": 200
+      }
+    ]
+  }
+]
+```
 
 ---------------------
 
@@ -2323,13 +2872,10 @@ Click on **Continue**, then **Run** the node.
 <img src="\img\credentials\sap-b1\SAP-AC-CNSOPP192.jpg" width="700" />
 <img src="\img\credentials\sap-b1\SAP-AC-CNSOPP193.jpg" width="700" />
 <img src="\img\credentials\sap-b1\SAP-AC-CNSOPP194.jpg" width="700" />
-<img src="" width="700" />
 
 --------------
 
 #### Result
-
-<img src="" width="700" />
 
 ```json
 [
@@ -2607,14 +3153,39 @@ Click on **Continue**, then **Run** the node
 <img src="\img\credentials\sap-b1\SAP-AC-UPRORD212.jpg" width="700" />
 <img src="\img\credentials\sap-b1\SAP-AC-UPRORD213.jpg" width="700" />
 <img src="\img\credentials\sap-b1\SAP-AC-UPRORD214.jpg" width="700" />
-<img src="" width="700" />
 
 #### Result
 
 ```json
 [
   {
-    "value": ""
+    "DocEntry": 39,
+    "NumAtCard": "728902",
+    "DocumentLines": [
+      {
+        "LineNum": 1,
+        "ItemCode": "DIET002",
+        "Quantity": 20,
+        "UnitPrice": 20,
+        "DiscountPercent": 3,
+        "TaxCode": "NT"
+      }
+    ],
+    "AddressExtension": {
+      "ShipToStreet": "Lake Street2",
+      "ShipToStreetNo": "1/43",
+      "ShipToBlock": "",
+      "ShipToCity": "Hyderabad",
+      "ShipToZipCode": "500037",
+      "ShipToCountry": "IN",
+      "ShipToState": "TS",
+      "BillToStreet": "Mark Spencer street",
+      "BillToStreetNo": "RDL 233",
+      "BillToCity": "Hyderabad",
+      "BillToZipCode": "500036",
+      "BillToCountry": "IN",
+      "BillToState": "TS"
+    }
   }
 ]
 ```
@@ -2745,7 +3316,6 @@ Click on **Continue**, then **Run** node
 
 <img src="\img\credentials\sap-b1\SAP-AC-CCKINCMGPMNT218.jpg" width="700" />
 <img src="\img\credentials\sap-b1\SAP-AC-CCKINMGPMNTS219.jpg" width="700" />
-<img src="" width="700" />
 
 ---------
 
@@ -3022,7 +3592,30 @@ Click on **Continue**, then **Run** node
 ```json
 [
   {
-    "value": ""
+    "DocEntry": 151,
+    "CardCode": "ZC0001",
+    "Comments": "Demo Purpose Update",
+    "NumAtCard": "REF-DEL-002",
+    "DocumentLines": [
+      {
+        "LineNum": 1,
+        "ItemCode": "DIET002",
+        "Quantity": 10,
+        "UnitPrice": 100,
+        "WarehouseCode": "01",
+        "TaxCode": "NT"
+      }
+    ],
+    "AddressExtension": {
+      "ShipToStreet": "Street A",
+      "ShipToCity": "Chennai",
+      "ShipToCountry": "India",
+      "ShipToZipCode": "600001",
+      "BillToStreet": "Street B",
+      "BillToCity": "Chennai",
+      "BillToCountry": "India",
+      "BillToZipCode": "600002"
+    }
   }
 ]
 ```
@@ -3042,7 +3635,7 @@ Click on **Continue** button
 
 ------------
 
-### Configuration Fields
+#### Configuration Fields
 
 | Field | Description |
 |------|-------------|
@@ -3185,7 +3778,7 @@ Click on **Continue** button
 
 ----------------
 
-### Configuration Fields
+#### Configuration Fields
 
 | Field | Description |
 |------|-------------|
@@ -3234,8 +3827,478 @@ Click on **Continue**, then **Run** node
 ```
 ----------------
 
+## SalesForecast Action
 
+### Create a SalesForecast
 
+The **Create Sales Forecast** action is used to define future sales expectations for items over a specified period. It helps in planning inventory, production, and business strategies.
+
+#### Select Credentials and Action Event
+
+<img src="\img\credentials\sap-b1\SAP-C-CSLSFRCST239.jpg" width="700" />
+
+Click on **Continue** button
+
+--------------------------
+
+#### Configuration Fields
+
+| Field | Description |
+|------|-------------|
+| Forecast Code | Unique identifier for the forecast. (e.g., "FC-001") |
+| Forecast Name | Name of the forecast. (e.g., "Q2 Sales Forecast") |
+| Optional Fields
+Forecast Start Date | Start date of the forecast period. (e.g., "2026-04-01") |
+| Forecast End Date | End date of the forecast period. (e.g., "2026-06-30") |
+| Sales Forecast Lines
+Item Code | Unique identifier of the item. (e.g., "ITEM-001") |
+| Quantity | Forecasted quantity. (e.g., "100") |
+| Sales Forecasted Day | Date for the forecast entry. (e.g., "2026-04-15") |
+| Optional Fields (Forecast Lines)
+Warehouse | Warehouse related to the forecast. (e.g., "WH-01") |
+| Forecast View | Defines how forecast is viewed (e.g., "Monthly", "Daily") |
+
+> **Note:** Forecast lines are essential for defining item-level predictions. Optional fields can be configured based on planning requirements.
+
+Click on **Continue**, then **Run** node
+
+-------------
+
+#### Example Configuration
+
+<img src="\img\credentials\sap-b1\SAP-AC-CSLSFRCST240.jpg" width="700" />
+<img src="\img\credentials\sap-b1\SAP-AC-CSLSFRCST241.png" width="700" />
+
+----------------
+
+#### Result
+
+```json
+[
+  {
+    "odata.metadata": "https://insync.pro/b1s/v1/$metadata#SalesForecast/@Element",
+    "ForecastStartDate": "2026-04-19",
+    "ForecastEndDate": "2026-04-28",
+    "ForecastCode": "D022",
+    "ForecastName": "For Daily forecast3",
+    "Numerator": 42,
+    "View": "fvtDaily",
+    "SalesForecastLines": []
+  }
+]
+```
+
+### Update SalesForecast
+
+The **Update Sales Forecast** action is used to modify an existing sales forecast using its unique identifier. It allows updating forecast details and item-level forecast data.
+
+#### Select Credentials and Action Event
+
+<img src="\img\credentials\sap-b1\SAP-C-USLSFRCS242.jpg" width="700" />
+
+Click on **Continue** button
+
+--------------------
+
+#### Configuration
+
+| Field | Description |
+|------|-------------|
+| Id (Numerator) | Enter the unique identifier of the forecast. (e.g., "1001") |
+| Optional Fields
+Forecast Name | Update the name of the forecast. (e.g., "Updated Q2 Forecast") |
+| Forecast Start Date | Update the start date of the forecast period. (e.g., "2026-04-01") |
+| Forecast End Date | Update the end date of the forecast period. (e.g., "2026-06-30") |
+| Sales Forecast Lines (Optional)
+Item Code | Unique identifier of the item. (e.g., "ITEM-002") |
+| Quantity | Updated forecasted quantity. (e.g., "150") |
+| Sales Forecasted Day | Date for the forecast entry. (e.g., "2026-05-01") |
+| Additional Optional Fields
+Warehouse | Warehouse related to the forecast. (e.g., "WH-02") |
+
+> **Note:** Only the provided fields will be updated. Ensure the correct forecast Id is used to avoid modifying the wrong forecast data.
+
+Click on **Continue**, then **Run** node
+
+------------------
+
+#### Example Configuration
+
+<img src="\img\credentials\sap-b1\SAP-AC-USLSFRCST243.jpg" width="700" />
+<img src="\img\credentials\sap-b1\SAP-AC-USLSFRCST244.jpg" width="700" />
+
+-----------------
+
+#### Result
+
+```json
+[
+  {
+    "value": ""
+  }
+]
+```
+
+<img src="" width="700" />
+
+---------------
+
+### Get Sales Forecast by Id
+
+The **Get Sales Forecast by Id** action retrieves details of a specific sales forecast using its unique identifier (Numerator). It returns forecast header and line-level data.
+
+#### Select Credentials and Action Event
+
+<img src="\img\credentials\sap-b1\SAP-C-GSLSFRCSTbyId245.jpg" width="700" />
+
+Click on **Continue** button
+
+---------------------
+
+#### Configuration Fields
+
+| Field | Description |
+|------|-------------|
+| Id (Numerator) | Enter the unique identifier of the sales forecast. (e.g., "42") |
+
+> **Note:** If no forecast exists for the provided Id, the response will be empty or null.
+
+Click on **Continue**, then **Run** node
+
+--------------
+
+#### Example Configuration
+
+<img src="\img\credentials\sap-b1\SAP-AC-GSLSFRCSTbyId246.jpg" width="700" />
+
+---------------
+
+#### Result
+
+```json
+[
+  {
+    "odata.metadata": "https://insync.pro/b1s/v1/$metadata#SalesForecast/@Element",
+    "ForecastStartDate": "2026-04-19",
+    "ForecastEndDate": "2026-04-28",
+    "ForecastCode": "D022",
+    "ForecastName": "For Daily forecast333-Latest",
+    "Numerator": 42,
+    "View": "fvtDaily",
+    "SalesForecastLines": [
+      {
+        "Quantity": 11,
+        "ForecastedDay": "2026-04-19",
+        "ItemNo": "DIET002",
+        "Warehouse": "01"
+      }
+    ]
+  }
+]
+```
+
+## PaymentDraft Actions
+
+### Create Payment Draft
+
+The **Create Payment Draft** action is used to create a draft payment document (incoming or outgoing). It allows users to save payment details for review before final posting.
+
+#### Select Credentials and Payments
+
+<img src="\img\credentials\sap-b1\SAP-C-CDRFTPAMNT247.jpg" width="700" />
+
+Click on **Continue** button
+
+--------------------------
+
+#### Configuration Fields
+
+| Field | Description |
+|------|-------------|
+| Payment Type | Select the type of payment. (e.g., "Incoming Payment" or "Outgoing Payment") |
+| Card Code | Enter the customer/vendor code. (e.g., "CUST-001") |
+| Optional Fields
+Document Date | Specify the document date. (e.g., "2026-04-01") |
+| Tax Date | Specify the tax date. (e.g., "2026-04-01") |
+| Due Date | Specify the due date. (e.g., "2026-04-05") |
+| Remarks | Add any notes related to the payment. (e.g., "Draft payment created") |
+| Journal Remarks | Enter accounting-related remarks. (e.g., "Payment Draft Entry") |
+| Cash Amount | Enter the cash amount for the payment. (e.g., "1000") |
+
+> **Note:** Draft payments can be reviewed and finalized later. Mandatory fields must be provided to create the draft successfully.
+
+Click on **Continue**, then **Run** node
+
+----------------
+
+#### Example Configuration
+
+<img src="\img\credentials\sap-b1\SAP-AC-CDRFTPAMNTS248.jpg" width="700" />
+<img src="\img\credentials\sap-b1\SAP-AC-CDRFTPAMNTS249.jpg" width="700" />
+
+-------------
+
+#### Result
+
+```json
+[
+  {
+    "DocEntry": 30,
+    "DocNum": 308,
+    "DocType": "rCustomer",
+    "DocDate": "2026-04-19",
+    "DueDate": "2026-04-19",
+
+    "CardCode": "ZC0001",
+    "CardName": "GivaJewellers",
+
+    "DocCurrency": "$",
+    "CashAccount": "_SYS00000000002",
+    "CashSum": 600,
+
+    "Remarks": "Demo Purpose",
+    "JournalRemarks": "Incoming Payment",
+
+    "PaymentType": "bopt_None",
+
+    "CashFlowAssignments": [
+      {
+        "PaymentMeans": "pmtCash",
+        "AmountLC": 600,
+        "AmountFC": 0
+      }
+    ]
+  }
+]
+```
+
+### Get Payment Draft by DocEntry
+
+The **Get Payment Draft by DocEntry** action retrieves details of a specific payment draft using its internal document entry number. It returns the draft payment information as structured data.
+
+#### Select Credentials and Action Event
+
+<img src="\img\credentials\sap-b1\SAP-C-GDRFTPAMNTbyDOCENTRY249.jpg" width="700" />
+
+Click on **Continue** button
+
+----------------
+
+#### Configuration Fields
+
+| Field | Description |
+|------|-------------|
+| DocEntry | Enter the internal document entry number of the payment draft. (e.g., "30012") |
+
+> **Note:** If no draft exists for the provided DocEntry, the response will be empty or null.
+
+Click on **Continue**, then **Run** node
+
+-----------------
+
+#### Example Configuration
+
+<img src="\img\credentials\sap-b1\SAP-AC-CDRFTPAMNTbyDOCENTRY250.jpg" width="700" />
+
+---------------
+
+#### Result
+
+```json
+{
+  "DocType": "rCustomer",
+  "DocDate": "2026-04-19",
+  "TaxDate": "2026-04-19",
+  "DueDate": "2026-04-19",
+  "CardCode": "ZC0001",
+  "Remarks": "Demo Purpose",
+  "JournalRemarks": "Incoming Payment",
+
+  "CashAccount": "_SYS00000000002",
+  "CashSum": 600,
+
+  "DocCurrency": "$",
+
+  "CashFlowAssignments": [
+    {
+      "PaymentMeans": "pmtCash",
+      "AmountLC": 600
+    }
+  ]
+}
+```
+
+### Convert Payment Draft to Incoming Payment
+
+The **Convert Payment Draft to Incoming Payment** action converts an existing payment draft into a finalized incoming payment. This is typically done after reviewing and confirming the draft details.
+
+#### Select Crdentials and Action Event
+
+<img src="\img\credentials\sap-b1\SAP-C-ConvertdrafttoIncomingPayments251.jpg" width="700" />
+
+Click on **Continue** button
+
+----------------------
+
+#### Configuration Fields
+
+| Field | Description |
+|------|-------------|
+| DocEntry | Enter the internal document entry number of the payment draft. (e.g., "30012") |
+
+> **Note:** Once converted, the draft becomes a posted incoming payment and may no longer be editable as a draft. Ensure all details are verified before conversion.
+
+Click on **Continue**, then **Run** node
+
+---------------------
+
+#### Example Configuration
+
+<img src="\img\credentials\sap-b1\SAP-AC-ConvertdrafttoIncomingPayment251.jpg" width="700" />
+
+-------
+
+#### Result
+
+```json
+[
+  {
+    "value": ""
+  }
+]
+```
+
+<img src="\img\credentials\sap-b1\SAP-AR-ConvertdrafttoIncomingPayment252.jpg" width="700" />
+
+------------
+
+## Blanket Agreements Actions
+
+### Create Sales Blanket Agreement
+
+The **Create Sales Blanket Agreement** action is used to define long-term agreements with customers for supplying goods or services under predefined terms. It helps in managing recurring sales with agreed pricing and quantities.
+
+#### Select Credentials and Action Event
+
+<img src="\img\credentials\sap-b1\SAP-C-BLNKARGEMNT253.jpg" width="700" />
+
+Click on **Continue** button
+
+--------------------
+
+#### Configuration Fields
+
+| Field | Description |
+|------|-------------|
+| Agreement Type | Specify the type of agreement. (e.g., "atGeneral") |
+| BP Code | Enter the business partner (customer) code. (e.g., "ZC0001") |
+| Agreement Method | Define how the agreement is managed. (e.g., "amItem") |
+| End Date | Specify the agreement end date. (e.g., "2026-04-20") |
+| Agreement Item Lines
+Item No | Unique identifier of the item. (e.g., "DIET002") |
+| Optional Fields (Item Lines)
+Planned Quantity | Planned quantity for the agreement. (e.g., "4") |
+| Unit Price | Agreed price per unit. (e.g., "100") |
+| Line Discount | Discount applied on the item. (e.g., "2") |
+| Optional Fields (Header)
+BP Name | Name of the business partner. (e.g., "GivaJewellers") |
+| NumAtCard | Customer reference number. (e.g., "664111000000360085") |
+| Contact Person Code | Identifier of the contact person. (e.g., "4") |
+| Remarks | Additional notes. (e.g., "Demo Purpose") |
+
+> **Note:** Blanket agreements are used for long-term contracts. Ensure correct pricing and quantities are defined before creating the agreement.
+
+Click on **Continue**, then **Run** node
+
+--------------------
+
+#### Example Configuration
+
+<img src="\img\credentials\sap-b1\SAP-AC-CBLNKTAGREMENT255.jpg" width="700" />
+<img src="\img\credentials\sap-b1\SAP-AC-CBLNKTAGREMENT256.jpg" width="700" />
+<img src="\img\credentials\sap-b1\SAP-AC-CBLNKTAGREMENT257.jpg" width="700" />
+
+-----------------------
+
+#### Result
+
+```json
+{
+  "BPCode": "ZC0001",
+  "StartDate": "2026-04-19",
+  "EndDate": "2026-04-20",
+  "AgreementType": "atGeneral",
+  "AgreementMethod": "amItem",
+  "PriceMode": "pmNet",
+  "BPCurrency": "$",
+  "Remarks": "Demo Purpose",
+
+  "BlanketAgreements_ItemsLines": [
+    {
+      "ItemNo": "DIET002",
+      "PlannedQuantity": 4,
+      "UnitPrice": 100,
+      "PriceCurrency": "$"
+    }
+  ]
+}
+```
+
+### Update Sales Blanket Agreement
+
+The **Update Sales Blanket Agreement** action is used to modify an existing blanket agreement using its agreement number. It allows updating business partner details, agreement validity, and item-level terms.
+
+#### Select Credentials and Action Events
+
+<img src="\img\credentials\sap-b1\SAP-C-USLSBLANKTAGREMENT258.jpg" width="700" />
+
+Click on **Continue** button
+
+------------------------
+
+#### Configuration Fields
+
+| Field | Description |
+|------|-------------|
+| Agreement No | Enter the unique agreement number. (e.g., "5001") |
+| Optional Fields (Header)
+BP Code | Update the business partner code. (e.g., "CUST-002") |
+| BP Name | Update the business partner name. (e.g., "XYZ Pvt Ltd") |
+| NumAtCard | Customer reference number. (e.g., "REF-BA-002") |
+| Remarks | Additional notes. (e.g., "Updated agreement terms") |
+| End Date | Update the agreement end date. (e.g., "2027-12-31") |
+| Agreement Item Lines
+Agreement Row Number | Specify the line number to update. (e.g., "1") |
+| Optional Fields (Item Lines)
+Item No | Update the item code. (e.g., "ITEM-002") |
+| Planned Quantity | Update the planned quantity. (e.g., "1500") |
+| Unit Price | Update the unit price. (e.g., "550") |
+| Line Discount | Update the discount percentage. (e.g., "10") |
+
+> **Note:** Only the provided fields will be updated. Ensure the correct Agreement No and row number are used to avoid unintended changes.
+
+Click on **Continue**, then **Run** node
+
+-----------------
+
+#### Example Configuration
+
+<img src="\img\credentials\sap-b1\SAP-AC-USLABLANKTAGREMENT258.jpg" width="700" />
+<img src="\img\credentials\sap-b1\SAP-AC-USLSBLNKTAGREMENT259.jpg" width="700" />
+
+-------------
+
+#### Result
+
+```json
+[
+  {
+    "value": ""
+  }
+]
+```
+
+<img src="\img\credentials\sap-b1\SAP-AR-USLSBLNKTAGREMENT260.jpg" width="700" />
 
 
 
