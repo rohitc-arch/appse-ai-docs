@@ -58,16 +58,16 @@ All required fields must be configured correctly to successfully authorize Gmail
 3. Click **Add Credentials**  
 4. Select **Gmail App** from the App list  
 5. Gmail credential form will be displayed  
-6. Note the `Callback API URL` — you will need this later  
+6. **Note** the `Callback API URL` — you will need this later  
 
 ---
 
 ## Step 2: Create a Google Cloud Project
 
 1. Go to the [Google Cloud Console](https://console.cloud.google.com/)  
-   Accept the Terms and Condition
+   Accept the Terms and Conditions if prompted
    <img src="/img/credentials/gmail/gm1.png" width="700"/>
-2. Click on the **Select a project** (top-left)  
+2. Click on **Select a project** (top-left) if no project is currently selected  
    <img src="/img/credentials/gmail/gm2.png" width="700"/>
 3. Click **New Project**  
    <img src="/img/credentials/gmail/gm3.png" width="700"/>
@@ -179,7 +179,7 @@ Click **Next**
    <img src="/img/credentials/gmail/gm18.png" width="700"/>
 3. Under **Test users**, click **Add users**  
    <img src="/img/credentials/gmail/gm19.png" width="700"/>
-4. Add Gmail addresses  
+4. Add one or more Gmail addresses.
 5. Click **Save**
 
 <img src="/img/credentials/gmail/gm20.png" width="700"/>
@@ -215,7 +215,7 @@ Click **Next**
 4. Click **Update**  
    <img src="/img/credentials/gmail/gm27.png" width="700"/>
 
-5. Click **Save**
+5. Click **Save** after confirming that the selected scopes are correct.
    <img src="/img/credentials/gmail/gm28.png" width="700"/>
 
 ---
@@ -237,7 +237,7 @@ Click **Next**
 ### Authorized Redirect URI
 
 - Add the **Callback API URL**  
-- It must exactly match the value displayed on the Gmail Credential page in the APPSe AI portal.
+- The Callback API URL must exactly match the value displayed on the Gmail Credential page in the APPSe AI portal. Refer to the image below for the Callback URL.
 
 <img src="/img/credentials/gmail/gm32.png" width="700"/>
 
@@ -262,14 +262,16 @@ After creation, you will get:
 
 ---
 
-## Step 10: Add Credential in appse ai
+## Step 10: Add Credential in APPSe ai
 
-1. Go back to the Gmail credential form  
+1. Go back to the Gmail credential form in APPSe AI platform.
 2. Enter:
    - **Connection Name**
    - **Client ID**
    - **Client Secret**
+   - Keep the **API Access Scope** unchanged.
 3. Click **Save & Authorize**
+4. After clicking Save & Authorize, a Gmail popup will open.
 
 <img src="/img/credentials/gmail/gm36.png" width="700"/>
 
@@ -281,7 +283,7 @@ After creation, you will get:
    <img src="/img/credentials/gmail/gm37.png" width="700"/>
 2. Click **Continue**  
    <img src="/img/credentials/gmail/gm38.png" width="700"/>
-3. Select the **Required Permission**  
+3. Select all the required checkbox
 4. Click **Continue**  
    <img src="/img/credentials/gmail/gm39.png" width="700"/>
 
