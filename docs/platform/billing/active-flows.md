@@ -55,7 +55,7 @@ You can increase your concurrent flow limit at any time by purchasing additional
 
 ### Pricing
 
-Extra flows are priced at **$10 per flow per month**, billed annually at **$120 per flow per year**.
+Extra flows are priced at **$30 per flow per month**, billed annually at **$360 per flow per year**.
 
 - **Due today**: The charge is prorated based on the number of months remaining in your current billing period.
 - **From next renewal**: The extra flows are permanently added to your plan and billed as part of your annual subscription going forward.
