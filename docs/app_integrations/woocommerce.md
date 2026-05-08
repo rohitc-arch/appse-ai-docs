@@ -17,8 +17,6 @@ To set up your WooCommerce credential, you can choose between two authentication
 
 <img src="/img/credentials/woocommerce/woocommerce_cred_form.png" alt="WooCommerce authentication type selection screen" width="700"/>
 
-> **Image**: This shows the authentication type selection screen. Select your preferred method below to continue.
-
 <Tabs>
 
 <TabItem value="API Key" label="API Key">
@@ -36,7 +34,7 @@ Select **API Key Authentication** in the authentication type selection screen.
 | Consumer Key    | API consumer key generated from WooCommerce settings                                                                      |
 | Consumer Secret | API consumer secret generated from WooCommerce settings                                                                   |
 
-<img src="/img/credentials/woocommerce/api_key_cred.png" alt="Woocommerce api key" width="700"/>
+<img src="/img/credentials/woocommerce/api_key_cred.png" alt="WooCommerce api key" width="700"/>
 
 ### Step-by-Step Guide
 
@@ -162,7 +160,7 @@ Here is the list of available triggers in WooCommerce:
 
 ## Actions
 
-Here is the list of available actions in WooCommerce product using product ID or SKU.
+Here is the list of available actions in WooCommerce:
 
 | Action                           | Description                                                               |
 | -------------------------------- | ------------------------------------------------------------------------- |
