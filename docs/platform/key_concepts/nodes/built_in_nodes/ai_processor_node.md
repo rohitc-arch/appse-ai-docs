@@ -17,39 +17,43 @@ This node is commonly used for:
 - Structured output for downstream workflows
 
 ---
-
 ## Configuration Overview
 
 The AI Processor Node consists of:
 
 - **Credential Configuration**
 - **Prompt & Output Configuration**
-
 ---
-
 ## Steps to Use AI Processor Node
-
 ---
-
 ### 1. Select AI Processor Node
 
 Select **AI Processor** from the node selection screen.
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\click-ai_agent-node.png" width="700"/
->
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\select-ai-processor-node.png" width="700"/
->
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/click-ai_agent-node.png"
+  alt="AI Agent node category selection"
+  width="700"
+/>
+
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/select-ai-processor-node.png"
+  alt="AI Processor Node selection screen"
+  width="700"
+/>
 
 ---
-
 ### 2. Configure Credentials
 
 In this step, select the AI provider, model, and credential type.
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\ai-processor-credential-configuration.png" width="700"/
->
----
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-credential-configuration.png"
+  alt="AI Processor credential configuration"
+  width="700"
+/>
 
+---
 #### Configure the following fields:
 
 #### **LLM Provider** *
@@ -60,10 +64,13 @@ Select the AI provider:
 - OpenAI  
 - Anthropic Claude  
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\select-llm-provider.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/select-llm-provider.png"
+  alt="LLM provider selection"
+  width="700"
+/>
 
 ---
-
 #### **Model** *
 
 The available models depend on the selected provider.
@@ -79,7 +86,11 @@ Select one of the following models:
 - GPT-4.1  
 - GPT-4.1-mini  
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\ai-processor-llm-openai-model.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-llm-openai-model.png"
+  alt="OpenAI model selection"
+  width="700"
+/>
 
 </TabItem>
 
@@ -91,7 +102,11 @@ Select one of the following models:
 - Gemini 2.5 Pro  
 - Gemini 3 Flash (Preview)  
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\ai-processor-llm-gemini-model.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-llm-gemini-model.png"
+  alt="Google Gemini model selection"
+  width="700"
+/>
 
 </TabItem>
 
@@ -103,15 +118,18 @@ Select one of the following models:
 - Claude 4.6 Sonnet  
 - Claude 4.6 Opus  
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\ai-processor-llm-claude-model.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-llm-claude-model.png"
+  alt="Anthropic Claude model selection"
+  width="700"
+/>
 
 </TabItem>
 
 </Tabs>
 
 ---
-
-#### ℹ️ Credential Usage
+#### Credential Usage
 
 The AI Processor Node supports two ways to execute requests based on credential configuration:
 
@@ -122,7 +140,6 @@ The AI Processor Node supports two ways to execute requests based on credential 
   Uses appse ai-managed credentials without requiring user-provided API keys
 
 ---
-
 #### How to Select Credential Mode
 
 The mode is controlled using the **BYOK toggle** in the Credential configuration step:
@@ -131,7 +148,6 @@ The mode is controlled using the **BYOK toggle** in the Credential configuration
 - **BYOK OFF** → Uses platform-managed credential  
 
 ---
-
 ### 3. BYOK (Bring Your Own Key)
 
 <Tabs>
@@ -140,60 +156,78 @@ The mode is controlled using the **BYOK toggle** in the Credential configuration
 
 **Turn on the BYOK toggle button**
 
-<img src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-byok-toggle.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-byok-toggle.png"
+  alt="BYOK toggle enabled"
+  width="700"
+/>
 
 ---
-
 #### **Account** *
 
 - Required only when **BYOK is enabled**
 - Provide your own API key through a credential
 - Requests are executed using your selected credential
 
-ℹ️ You can select an existing credential or create a new one
-
+:::info
+You can select an existing credential or create a new one
+:::
 ---
-
 #### Create a New Credential
 
-ℹ️ Credentials can be created either from the **Credentials page** or directly within the node.
+:::info
+Credentials can be created either from the **Credentials page** or directly within the node.
+:::
 
 - Use the **Credentials page** to manage and reuse credentials across workflows  
 - Use the **Create a new credential** option in the node  
 
 Credentials created from either location will be available in the **Account** dropdown.
-
 ---
-
 1. Click on the **Account** dropdown
 
-<img src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/select-byok-credential.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/select-byok-credential.png"
+  alt="Account credential dropdown selection"
+  width="700"
+/>
 
 2. Click **Create a new credential**
 
-<img src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/click-create-credential.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/click-create-credential.png"
+  alt="Create new credential option"
+  width="700"
+/>
 
 3. Enter the required details:
    - **Connection Name**  
    - **Secret Key (API Key)**  
 
-<img src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/provide-credential.png" width="500"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/provide-credential.png"
+  alt="Credential creation form"
+  width="500"
+/>
 
 4. Click **Save**
 
-<img src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/click-credential-save-button.png" width="500"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/click-credential-save-button.png"
+  alt="Credential save button"
+  width="500"
+/>
 
 ---
-
 #### Select Existing Credential
 
-- Choose a credential from the **Account** dropdown  
+If a credential already exists:
+
+- Choose the credential from the **Account** dropdown  
 - The selected credential will be used for execution  
 
-After creating a credential, it will appear in the list for selection.
-
+After creating a credential, it will automatically appear in the list for selection.
 ---
-
 </TabItem>
 
 <TabItem value="byok-off" label="BYOK OFF">
@@ -203,7 +237,11 @@ After creating a credential, it will appear in the list for selection.
 - No API key required  
 - Uses **platform-managed credentials**  
 
-<img src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-byok-toggle.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-byok-toggle.png"
+  alt="BYOK toggle disabled"
+  width="700"
+/>
 
 </TabItem>
 
@@ -213,10 +251,13 @@ After creating a credential, it will appear in the list for selection.
 
 Move to the **Configure** step.
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\ai-processor-configuration-page.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-configuration-page.png"
+  alt="AI Processor configuration page"
+  width="700"
+/>
 
 ---
-
 #### **Message** *
 
 The main prompt sent to the AI model.
@@ -241,15 +282,22 @@ Tasks:
 3. Suggest category
 4. Provide improvements
 ```
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\prompt-configuration-field.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/prompt-configuration-field.png"
+  alt="Prompt configuration field"
+  width="700"
+/>
 
 ---
-
-#### ℹ️ **Optional Fields Note**
+#### **Optional Fields Note**
 
 Click on **Optionals** if Optional fields are required
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\select-optional-fields.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/select-optional-fields.png"
+  alt="Optional fields selection"
+  width="700"
+/>
 
 The following fields are optional and can be configured based on your use case:
 
@@ -257,8 +305,11 @@ The following fields are optional and can be configured based on your use case:
 - **Temperature**
 - **Structured Response Format**
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\optional-fields.png" width="700"/>
-
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/optional-fields.png"
+  alt="Optional AI Processor fields"
+  width="700"
+/>
 
 You may:
 - Provide all, some, or none of these fields  
@@ -267,9 +318,7 @@ You may:
 If not provided:
 - Default model behavior will be used  
 - Output will be unstructured unless a schema is defined  
-
 ---
-
 #### **System Message (Optional)**
 
 Defines AI behavior.
@@ -290,10 +339,10 @@ Controls the randomness and creativity of the AI response.
 - `1.0` → Noticeably more creative and varied responses 
 - `2.0` → Most creative and diverse output  
 
-ℹ️ If not specified, the default value (`0.7`) is used.
-
+:::info
+If not specified, the default value (`0.7`) is used.
+:::
 --- 
-
 #### **Structured Response Format (Optional)**
 
 Define a JSON schema to enforce structured output.
@@ -317,29 +366,41 @@ You can either:
   }
 }
 ```
-⚠️ If schema is invalid, the response may not follow the expected format.
+:::info
+If schema is invalid, the response may not follow the expected format.
+:::
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\ai-processor-optional-field-config.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-optional-field-config.png"
+  alt="Structured response format configuration"
+  width="700"
+/>
 
 --- 
-
 ### 5. Execute the Node
 
 Click **Continue**, then **Run** to execute.
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\ai-processor-continue-button.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-continue-button.png"
+  alt="AI Processor continue button"
+  width="700"
+/>
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\ai-processor-run-button.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-run-button.png"
+  alt="AI Processor run button"
+  width="700"
+/>
 
 ---
-
 ### 6. Output
 
 After execution:
 
-AI response is generated
-Structured output is returned (if schema is used)
-Output is available for downstream nodes
+- AI response is generated  
+- Structured output is returned (if schema is used)  
+- Output is available for downstream nodes  
 
 <div
   style={{
@@ -350,9 +411,8 @@ Output is available for downstream nodes
     borderRadius: '6px'
   }}
 >
-<pre>
-<code>
-```JSON
+
+```json
 [
   {
     "content": "{\"itemCode\":\"Gucci7890\",\"description\":\"Experience the sophisticated allure of the Gucci Perfume, a signature scent that encapsulates luxury and elegance. With its unique blend of floral and spicy notes, this perfume elevates your everyday style, leaving a lasting impression. Each bottle represents the timeless charm and modern creativity the Gucci brand is renowned for, making it an indispensable addition to your fragrance collection.\",\"keywords\":[\"Gucci Perfume\",\"luxury fragrance\",\"signature scent\",\"elegant perfume\",\"floral perfume\",\"spicy notes\",\"designer fragrance\",\"Gucci eau de parfum\"],\"category\":\"Luxury Fragrances\"}",
@@ -394,37 +454,34 @@ Output is available for downstream nodes
       },
       "model_provider": "openai",
       "model_name": "gpt-4o-2024-08-06",
-      "system_fingerprint": "fp_fab7bd3a94",
-      "id": "chatcmpl-Dc4gW4PzDTiNalY3LxKyli3ziE83V",
+      "system_fingerprint": "fp_XXXXXXXXXX",
+      "id": "chatcmpl-XXXXXXXXXXXXXXXXXXXX",
       "service_tier": "default",
       "finish_reason": "stop",
       "logprobs": null
-    },
-    "credits_consumed": "0.422667"
+    }
   }
 ]
 ```
-</code>
-</pre>
 </div>
 
-<img src="\img\platform\key-concepts\nodes\built-in\ai_processor_node\ai-processor-output.png" width="700"/>
+<img
+  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-output.png"
+  alt="AI Processor execution output"
+  width="700"
+/>
 
 ---
-
-**Key Features**
+### Key Features
 - Multi-provider AI support
 - BYOK and appse ai-managed credentials
 - Dynamic expressions in prompts
 - System-level AI behavior control
 - Structured JSON output support
 - Seamless workflow integration
-
 ---
-
-**Notes**
+### Notes
 - Use System Message to guide AI behavior
 - Use JSON Schema for structured outputs
 - Ensure valid credentials when BYOK is ON
-
 ---
