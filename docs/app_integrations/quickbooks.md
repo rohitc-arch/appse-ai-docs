@@ -1,13 +1,13 @@
 ---
 title: "QuickBooks"
-description: A leading cloud-based accounting software for managing invoices, expenses, payroll, and financial reporting for small and mid-size businesses.
+description: Step-by-step guide to set up QuickBooks credentials and automate financial workflows in appse ai.
 slug: /app-integrations/quickbooks/
 ---
 
-**QuickBooks Online** is a cloud accounting platform for small and medium-sized businesses, designed to simplify accounting, invoicing, payroll, and financial reporting. It provides real-time visibility into cash flow, expenses, and profitability — all from a single dashboard. With **appse ai**, you can connect QuickBooks Online to your existing business tools and automate end-to-end financial workflows.
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+
+**QuickBooks Online** is a cloud accounting platform for small and medium-sized businesses, designed to simplify accounting, invoicing, payroll, and financial reporting. It provides real-time visibility into cash flow, expenses, and profitability — all from a single dashboard. With **appse ai**, you can connect QuickBooks Online to your existing business tools and automate end-to-end financial workflows.
 
 ---
 
@@ -41,8 +41,6 @@ Log in to **appse ai** and navigate to **Credentials** → **Add credentials**. 
 | Realm ID        | The unique QuickBooks company ID used to connect your QuickBooks Online company |
 | Client ID       | The OAuth client ID from Intuit Developer                                       |
 | Client Secret   | The OAuth client secret from Intuit Developer                                   |
-
-## QuickBooks Credential Setup
 
 Follow the steps below to quickly set up your QuickBooks credential.
 
@@ -222,6 +220,8 @@ Make sure you authorize the correct QuickBooks Online company. If you connect th
 Upon successful authorization, your credentials will be saved in the appse ai platform.
 :::
 
+---
+
 ## Triggers
 
 Here is the list of available triggers in QuickBooks:
@@ -233,6 +233,8 @@ Here is the list of available triggers in QuickBooks:
 | **New Purchase Order Created** | Triggers when a new purchase order is created in QuickBooks Online.             |
 | **New Sales Order Created**    | Triggers when a new sales order is created in QuickBooks Online.                |
 
+---
+
 ## Actions
 
 Here is the list of available actions in QuickBooks:
@@ -242,6 +244,8 @@ Here is the list of available actions in QuickBooks:
 | **Create Purchase Order** | Creates a new purchase order for a vendor in QuickBooks Online.         |
 | **Update Purchase Order** | Updates the details of an existing purchase order in QuickBooks Online. |
 
-## Need Help?
+---
+
+## Support
 
 If you need assistance, contact the appse ai support team at [hello@appse.ai](mailto:hello@appse.ai).
