@@ -105,13 +105,13 @@ They don’t affect the workflow’s execution, they’re simply for documentati
 
 <img src="\img\platform\key-concepts\workflow\introduction\import-workflow.png" alt="import workflow option" width="300"/>
 
-The Import Workflow feature allows users to import workflows by uploading a JSON file. This makes it easy to share workflows across teams or organizations, eliminating the need to recreate them from scratch.
+The Import Workflow feature allows users to import workflows by uploading an encrypted **`.awf`** file. This makes it easy to share workflows across teams or organizations, eliminating the need to recreate them from scratch.
 
 ### 10. Export Workflow
 
 <img src="\img\platform\key-concepts\workflow\introduction\export-workflow.png" alt="export workflow option" width="300"/>
 
-The **Export Workflow** feature allows you to download your workflow from the Workflow Designer as a **JSON file**. 
+The **Export Workflow** feature allows you to download your workflow from the Workflow Designer as an encrypted **`.awf`** file. 
 
 This is particularly useful for sharing workflows across teams or organizations, enabling others to easily reuse or collaborate on the same workflow without having to recreate it. It also serves as a great way to keep a backup of your workflows for safekeeping or version control. Additionally, you can move workflows between different appse ai accounts or environments, streamlining the process of transferring workflows without the need to rebuild them from scratch.
 

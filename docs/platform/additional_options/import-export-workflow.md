@@ -7,7 +7,7 @@ description: Learn how to import & export workflows using appse ai.
 
 # Import or Export Workflow
 
-The Import/Export functionality in appse ai allows teams to share and reuse workflows across different organizations or projects easily. Instead of rebuilding workflows from scratch, users can export an existing workflow as a JSON file and import it into another account or workspace.
+The Import/Export functionality in appse ai allows teams to share and reuse workflows across different organizations or projects easily. Instead of rebuilding workflows from scratch, users can export an existing workflow as an encrypted **`.awf`** file and import it into another account or workspace. The exported file content is encrypted so workflow metadata is not directly accessible or readable from the file alone.
 
 This feature helps teams save time, reduce duplication, and maintain consistency in their automation processes. It promotes collaboration by allowing workflows to be shared seamlessly across departments, ensuring faster and more efficient workflow management.
 
@@ -21,7 +21,7 @@ This feature helps teams save time, reduce duplication, and maintain consistency
 
 <img src="\img\platform\additional-options\import-or-export-workflows\2-choose-file.png" alt="choose file screen" width="700"/>
 
-3. Select the JSON file from your system.  
+3. Select the **`.awf`** file (encrypted workflow export) from your system.
 
 <img src="\img\platform\additional-options\import-or-export-workflows\3-select-workflow.png" alt="select workflow screen" width="700"/> 
 
@@ -39,7 +39,7 @@ This feature helps teams save time, reduce duplication, and maintain consistency
 
 <img src="\img\platform\additional-options\import-or-export-workflows\6-export-workflow.png" alt="export workflow screen" width="700"/>
 
-2. Click on ‘Export workflow’ to export the workflow. The workflow will be downloaded in the form of a JSON file.
+2. Click on **Export workflow** to export the workflow. The workflow will be downloaded as an encrypted **`.awf`** file.
 
 <img src="\img\platform\additional-options\import-or-export-workflows\7-export-toaster.png" alt="export toaster screen" width="700"/>
 
