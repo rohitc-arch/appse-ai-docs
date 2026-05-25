@@ -137,7 +137,9 @@ Click on **Continue** button.
 | Fetch Data Since | Specify the date and time to fetch new company records. (e.g., "01/04/2024 05:58") |
 | Limit | Define the number of records to retrieve. (e.g., "10" or "1") |
 
-> **Note:** Fetch Data Since is mandatory. Limit can be adjusted based on how many records you want to retrieve.
+> :::note
+Fetch Data Since is mandatory. Limit can be adjusted based on how many records you want to retrieve.
+:::
 
 Click on **Continue**, then **Run** node.
 
@@ -199,7 +201,9 @@ Click on **Continue** button.
 | Fetch Data Since | Specify the date and time to fetch new user records. (e.g., "01/04/2024 05:58") |
 | Limit | Define the number of records to retrieve. (e.g., "10" or "1") |
 
-> **Note:** Fetch Data Since is mandatory. Limit can be adjusted based on how many records you want to retrieve.
+> :::note
+Fetch Data Since is mandatory. Limit can be adjusted based on how many records you want to retrieve.
+:::
 
 Click on **Continue**, then **Run** node.
 
@@ -207,7 +211,9 @@ Click on **Continue**, then **Run** node.
 
 ##### Example Configuration
 
-> **Note:** The configuration fields are the same for all triggers - refer to the screenshot above.
+> :::note
+The configuration fields are the same for all triggers - refer to the screenshot above.
+:::
 
 -------------------------
 
@@ -259,7 +265,9 @@ Click on **Continue** button.
 | Fetch Data Since | Specify the date and time to fetch new quote records. (e.g., "01/04/2024 05:58") |
 | Limit | Define the number of records to retrieve. (e.g., "10" or "1") |
 
-> **Note:** Fetch Data Since is mandatory. Limit can be adjusted based on how many records you want to retrieve.
+> :::note
+Fetch Data Since is mandatory. Limit can be adjusted based on how many records you want to retrieve.
+:::
 
 Click on **Continue**, then **Run** node.
 
@@ -267,7 +275,9 @@ Click on **Continue**, then **Run** node.
 
 ##### Example Configuration
 
-> **Note:** The configuration fields are the same for all triggers - refer to the screenshot above.
+> :::note
+The configuration fields are the same for all triggers - refer to the screenshot above.
+:::
 
 -------------------------
 
@@ -326,7 +336,9 @@ Click on **Continue** button.
 | Fetch Data Since | Specify the date and time to fetch new B2B order records. (e.g., "01/04/2024 05:58") |
 | Limit | Define the number of records to retrieve. (e.g., "10" or "1") |
 
-> **Note:** Fetch Data Since is mandatory. Limit can be adjusted based on how many records you want to retrieve.
+> :::note
+Fetch Data Since is mandatory. Limit can be adjusted based on how many records you want to retrieve.
+:::
 
 Click on **Continue**, then **Run** node.
 
@@ -334,7 +346,9 @@ Click on **Continue**, then **Run** node.
 
 ##### Example Configuration
 
-> **Note:** The configuration fields are the same for all triggers - refer to the screenshot above.
+> :::note
+The configuration fields are the same for all triggers - refer to the screenshot above.
+:::
 
 -------------------------
 
@@ -394,22 +408,24 @@ Click on **Continue** button.
 
 | Field | Description |
 |------|-------------|
-| Company Name | Enter the company name. (e.g., "Vento") |
-| Company Phone | Enter the company contact number. (e.g., "9809890876") |
-| Company Email | Enter the company email address. (e.g., "vento.co@yopmail.com") |
-| Admin First Name | Enter the admin's first name. (e.g., "Glory") |
-| Admin Last Name | Enter the admin's last name. (e.g., "peterson") |
-| Admin Email | Enter the admin email address. (e.g., "glory.peterson@yopmail.com") |
+| Company Name | Enter the company name. (e.g., "VentoBen") |
+| Company Phone | Enter the company contact number. (e.g., "9878987654") |
+| Company Email | Enter the company email address. (e.g., "ventoben.co@yopmail.com") |
+| Admin First Name | Enter the admin's first name. (e.g., "Gloryben") |
+| Admin Last Name | Enter the admin's last name. (e.g., "Peterson") |
+| Admin Email | Enter the admin email address. (e.g., "gloryben.peterson@yopmail.com") |
 | Address Line 1 | Enter the primary address. (e.g., "Maxwell Road") |
 | City | Enter the city name. (e.g., "Hyderabad") |
-| Zip Code | Enter the postal code. (e.g., "500039") |
+| Zip Code | Enter the postal code. (e.g., "500038") |
 | State | Enter the state code. (e.g., "TS") |
 | Country | Enter the country code. (e.g., "IN") |
 | Optional Fields | Additional company details that can be configured. |
-| Admin Phone Number | Admin contact number. (e.g., "7890987656") |
+| Admin Phone Number | Admin contact number. (e.g., "7890987890") |
 | Address Line 2 | Secondary address line. (e.g., "Near Walks Valley") |
 
-> **Note:** All mandatory fields must be provided to successfully create a company. Optional fields can be added as needed.
+:::note
+All mandatory fields must be provided to successfully create a company. Optional fields can be added as needed.
+:::
 
 Click on **Continue**, then **Run** node.
 
@@ -428,9 +444,9 @@ Click on **Continue**, then **Run** node.
   {
     "code": 200,
     "data": {
-      "companyId": 12621563,
-      "customerId": 682,
-      "customerGroupId": 298
+      "companyId": 12711142,
+      "customerId": 692,
+      "customerGroupId": 304
     },
     "meta": {
       "message": "SUCCESS"
@@ -455,19 +471,21 @@ Click on **Continue** button.
 
 | Field | Description |
 |------|-------------|
-| Company Id | Enter the unique company identifier. (e.g., "12621563") |
+| Company Id | Enter the unique company identifier. (e.g., "12711142") |
 | State | Enter the state code. (e.g., "TS") |
 | Country | Enter the country code. (e.g., "IN") |
 | Optional Fields | Additional company details that can be updated. |
-| Company Name | Company name. (e.g., "Vento Co") |
-| Company Phone | Company contact number. (e.g., "6789876543") |
-| Company Email | Company email address. (e.g., "vento.co@yopmail.com") |
+| Company Name | Company name. (e.g., "Ventoben Co") |
+| Company Phone | Company contact number. (e.g., "7654323456") |
+| Company Email | Company email address. (e.g., "gloryben.peterson@yopmail.com") |
 | Address Line 1 | Primary address. (e.g., "Wave Rock Street") |
 | Address Line 2 | Secondary address. (e.g., "Near Chipotle School") |
 | City | City name. (e.g., "Hyderabad") |
-| Zip Code | Postal code. (e.g., "500037") |
+| Zip Code | Postal code. (e.g., "500039") |
 
-> **Note:** Company Id, State, and Country are mandatory. Only the provided optional fields will be updated.
+:::note
+Company Id, State, and Country are mandatory. Only the provided optional fields will be updated.
+:::
 
 Click on **Continue**, then **Run** node.
 
@@ -484,9 +502,9 @@ Click on **Continue**, then **Run** node.
 ```json
 [
   {
-    "code": 200,  
+    "code": 200,
     "data": {
-      "companyId": 12621563
+      "companyId": 12711142
     },
     "meta": {
       "message": "SUCCESS"
@@ -511,7 +529,7 @@ Click on **Continue** button.
 
 | Field | Description |
 |------|-------------|
-| Company Id | Enter the unique company identifier. (e.g., "12621563") |
+| Company Id | Enter the unique company identifier. (e.g., "12711142") |
 
 > **Note:** Company Id is mandatory. The action returns company details for the specified company.
 
@@ -531,25 +549,25 @@ Click on **Continue**, then **Run** node.
   {
     "code": 200,
     "data": {
-      "companyId": 12621563,
-      "companyName": "Vento Co",
-      "bcGroupName": "Vento Co",
+      "companyId": 12711142,
+      "companyName": "Ventoben Co",
+      "bcGroupName": "Ventoben Co",
       "companyStatus": 1,
       "catalogId": null,
       "catalogName": null,
-      "companyEmail": "vento.co@yopmail.com",
-      "companyPhone": "6789876543",
+      "companyEmail": "gloryben.peterson@yopmail.com",
+      "companyPhone": "7654323456",
       "addressLine1": "Wave Rock Street",
       "addressLine2": "Near Chipotle School",
       "city": "Hyderabad",
       "state": "TS",
       "country": "India",
-      "zipCode": "500037",
-      "createdAt": 1777543519,
-      "updatedAt": 1777546664,
+      "zipCode": "500039",
+      "createdAt": 1779702441,
+      "updatedAt": 1779702866,
       "uuid": "",
       "priceListAssign": [],
-      "bcGroupId": 298,
+      "bcGroupId": 304,
       "extraFields": [],
       "parentCompany": {
         "id": null,
@@ -581,13 +599,13 @@ Click on **Continue** button.
 
 | Field | Description |
 |------|-------------|
-| First Name | Enter the user's first name. (e.g., "Nick") |
+| First Name | Enter the user's first name. (e.g., "Nicke") |
 | Last Name | Enter the user's last name. (e.g., "Genwell") |
-| Company Id | Enter the associated company identifier. (e.g., "12621563") |
-| Email | Enter the user email address. (e.g., "nick.genwell@yopmail.com") |
-| Role | Assign the user role. (e.g., "Admin or Manager or Buyer") |
+| Company Id | Enter the associated company identifier. (e.g., "12711142") |
+| Email | Enter the user email address. (e.g., "nicke.genwell@yopmail.com") |
+| Role | Assign the user role. (e.g., "Admin") |
 | Optional Fields | Additional user details that can be configured. |
-| Phone | Contact number of the user. (e.g., "8767801444") |
+| Phone | Contact number of the user. (e.g., "8767801400") |
 
 > **Note:** First Name, Last Name, Company Id, Email, and Role are mandatory. Optional fields can be added as required.
 
@@ -607,8 +625,8 @@ Click on **Continue**, then **Run** node.
   {
     "code": 200,
     "data": {
-      "userId": 18229706,
-      "bcId": 684
+      "userId": 18382574,
+      "bcId": 693
     },
     "meta": {
       "message": "Success"
@@ -633,12 +651,12 @@ Click on **Continue** button.
 
 | Field | Description |
 |------|-------------|
-| User Id (Identifier) | Enter the unique user identifier. (e.g., "18229706") |
+| User Id (Identifier) | Enter the unique user identifier. (e.g., "18382574") |
 | Optional Fields | Additional user details that can be updated. |
-| First Name | User's first name. (e.g., "Alden") |
-| Last Name | User's last name. (e.g., "Felix") |
-| Email | User email address. (e.g., "alden.felix@yopmail.com") |
-| Phone | User contact number. (e.g., "8792345432") |
+| First Name | User's first name. (e.g., "Nickee") |
+| Last Name | User's last name. (e.g., "Genwellden") |
+| Email | User email address. (e.g., "nicke.genwell@yopmail.com") |
+| Phone | User contact number. (e.g., "7656789098") |
 | Role | Assign or update user role. (e.g., "Manager") |
 
 > **Note:** User Id is mandatory. Only the provided optional fields will be updated. Role can be set as Manager, Buyer, or Admin based on requirements.
@@ -659,16 +677,16 @@ Click on **Continue**, then **Run** node.
   {
     "code": 200,
     "data": {
-      "id": 18229706,
-      "createdAt": 1777553775,
-      "updatedAt": 1777554925,
-      "firstName": "Alden",
-      "lastName": "Felix",
-      "email": "alden.felix@yopmail.com",
+      "id": 18382574,
+      "createdAt": 1779703390,
+      "updatedAt": 1779703656,
+      "firstName": "Nickee",
+      "lastName": "Genwellden",
+      "email": "nicke.genwell@yopmail.com",
       "phoneNumber": "",
       "role": 2,
-      "customerId": 684,
-      "companyId": 12621563,
+      "customerId": 693,
+      "companyId": 12711142,
       "uuid": "",
       "extraFields": [],
       "channelList": [
@@ -705,7 +723,7 @@ Click on **Continue** button.
 
 | Field | Description |
 |------|-------------|
-| Email | Enter the user email address. (e.g., "alden.felix@yopmail.com") |
+| Email | Enter the user email address. (e.g., "nicke.genwell@yopmail.com") |
 
 > **Note:** Email is mandatory. The action returns matching user details for the specified email.
 
@@ -723,16 +741,16 @@ Click on **Continue**, then **Run** node.
 ```json
 [
   {
-    "id": 18229706,
-    "createdAt": 1777553775,
-    "updatedAt": 1777554925,
-    "firstName": "Alden",
-    "lastName": "Felix",
-    "email": "alden.felix@yopmail.com",
+    "id": 18382574,
+    "createdAt": 1779703390,
+    "updatedAt": 1779703656,
+    "firstName": "Nickee",
+    "lastName": "Genwellden",
+    "email": "nicke.genwell@yopmail.com",
     "phoneNumber": "",
     "role": 2,
-    "customerId": 684,
-    "companyId": 12621563,
+    "customerId": 693,
+    "companyId": 12711142,
     "uuid": "",
     "channelList": [
       {
@@ -763,7 +781,7 @@ Click on **Continue** button.
 
 | Field | Description |
 |------|-------------|
-| User Id | Enter the unique user identifier. (e.g., "18229706") |
+| User Id | Enter the unique user identifier. (e.g., "18382574") |
 
 > **Note:** User Id is mandatory. The action returns user details for the specified user.
 
@@ -783,16 +801,16 @@ Click on **Continue**, then **Run** node.
   {
     "code": 200,
     "data": {
-      "id": 18229706,
-      "createdAt": 1777553775,
-      "updatedAt": 1777554925,
-      "firstName": "Alden",
-      "lastName": "Felix",
-      "email": "alden.felix@yopmail.com",
+      "id": 18382574,
+      "createdAt": 1779703390,
+      "updatedAt": 1779703656,
+      "firstName": "Nickee",
+      "lastName": "Genwellden",
+      "email": "nicke.genwell@yopmail.com",
       "phoneNumber": "",
       "role": 2,
-      "customerId": 684,
-      "companyId": 12621563,
+      "customerId": 693,
+      "companyId": 12711142,
       "uuid": "",
       "extraFields": [],
       "channelList": [
@@ -828,7 +846,7 @@ Click on **Continue** button.
 
 | Field | Description |
 |------|-------------|
-| Company Id | Enter the unique company identifier. (e.g., "12621563") |
+| Company Id | Enter the unique company identifier. (e.g., "12711142") |
 | Optional Fields | Additional parameters to filter results. |
 | Limit | Define the number of records to retrieve. (e.g., "2") |
 
@@ -848,16 +866,16 @@ Click on **Continue**, then **Run** node.
 ```json
 [
   {
-    "id": 18228043,
-    "createdAt": 1777543519,
-    "updatedAt": 1777543540,
-    "firstName": "Glory",
-    "lastName": "peterson",
-    "email": "glory.peterson@yopmail.com",
-    "phoneNumber": "7890987656",
+    "id": 18382087,
+    "createdAt": 1779702441,
+    "updatedAt": 1779702466,
+    "firstName": "Gloryben",
+    "lastName": "Peterson",
+    "email": "gloryben.peterson@yopmail.com",
+    "phoneNumber": "7890987890",
     "role": 0,
-    "customerId": 682,
-    "companyId": 12621563,
+    "customerId": 692,
+    "companyId": 12711142,
     "uuid": "",
     "channelList": [
       {
@@ -870,16 +888,16 @@ Click on **Continue**, then **Run** node.
     "companyRoleName": "Admin"
   },
   {
-    "id": 18229156,
-    "createdAt": 1777551490,
-    "updatedAt": 1777551509,
-    "firstName": "Allex",
-    "lastName": "truewell",
-    "email": "alex.truewell@yopmail.com",
+    "id": 18382574,
+    "createdAt": 1779703390,
+    "updatedAt": 1779703656,
+    "firstName": "Nickee",
+    "lastName": "Genwellden",
+    "email": "nicke.genwell@yopmail.com",
     "phoneNumber": "",
-    "role": 1,
-    "customerId": 683,
-    "companyId": 12621563,
+    "role": 2,
+    "customerId": 693,
+    "companyId": 12711142,
     "uuid": "",
     "channelList": [
       {
@@ -888,8 +906,8 @@ Click on **Continue**, then **Run** node.
         "iconUrl": "https://s3.amazonaws.com/bc-channel-platform/channel-icons/bigcommerce.svg"
       }
     ],
-    "companyRoleId": 12794,
-    "companyRoleName": "Senior Buyer"
+    "companyRoleId": 12795,
+    "companyRoleName": "Junior Buyer"
   }
 ]
 ```
@@ -985,7 +1003,7 @@ Click on **Continue** button.
 | Country Code | Country code. (e.g., "IN") |
 | State Code | State code. (e.g., "AP") |
 | State Name | State name. (e.g., "Andhra Pradesh") |
-| Phone Number | Contact number. (e.g., "8987876765") |
+| Phone Number | Contact number. (e.g., "8987876766") |
 
 > **Note:** Address Id is mandatory. Only the provided optional fields will be updated.
 
@@ -1096,6 +1114,43 @@ Click on **Continue**, then **Run** node.
 ]
 ```
 ----------------------
+
+### Invoice Actions
+
+#### Create Invoice
+
+Create Invoice action is used to generate a new invoice for an existing order in Magento2 using the specified order ID.
+
+##### Select Credentials and Action Events
+<img src="/img/credentials/bigcommerce-b2b/C-CRTINVOICE.jpg" alt="BigComB2B Create Invoice - Credential selection" width="700" />
+
+Click on **Continue** button.
+
+---------------------------
+
+##### Configuration
+
+| Field | Description |
+|------|-------------|
+| Order Id | Specify the unique order ID for which the invoice should be created. (e.g., `29544152`) |
+
+> **Note:** Order Id is a mandatory field and should contain a valid Magento2 order identifier.
+
+Click on **Continue**, then **Run** node.
+
+-------------------------
+
+##### Example Configuration
+<img src="/img/credentials/bigcommerce-b2b/AC-CRTINVOICE.jpg" alt="BigComB2B Create Invoice - Example Configuration" width="700" />
+
+-------------------------
+
+##### Result
+
+```json
+
+```
+---------------------------------------
 
   </TabItem>
 </Tabs>
