@@ -11,6 +11,73 @@ BigCommerce is a leading e-commerce platform that helps businesses create and ma
 
 ---
 
+<Tabs>
+  <TabItem value="Public App" label="Public App (Recommended)">
+
+  :::note
+  Apps installed through the BigCommerce Marketplace use OAuth 2.0 authentication only. Marketplace users should install and connect the app directly through the BigCommerce OAuth flow. Users do not need to manually enter access tokens, client IDs, or client secrets. Only the Store Hash is required to identify and connect the BigCommerce store.
+  :::
+
+  ### Required Fields
+
+The following fields are required to authenticate your BigCommerce account:
+
+| Field        | Description                                      |
+|----|----|
+| Store Hash   | Unique identifier for your BigCommerce store     |
+
+### Find Your Store Hash
+
+- Log in to your BigCommerce admin dashboard.  
+- In your browser's address bar, you will see a URL like:  
+   `https://store-abc123.mybigcommerce.com/manage/dashboard`
+
+<img src="/img/credentials/big-commerce/public/bigcommerce-cred-store-hash.png" alt="appse ai BigCommerce Store Hash" width="700"/>
+
+- The value after `store-` is your **Store Hash**.  
+   Example: `abc123`
+
+### Add Credential in appse ai
+
+- Navigate to: https://workflow.appse.ai/
+- Log in to your existing account or register for a new account if needed.
+- From the dashboard, go to the Credentials section.
+- Click on Add Credentials.
+- Select BigCommerce from the list of available applications.
+
+<img src="/img/credentials/big-commerce/public/select_bigcommerce_app.png" alt="BigCommerce app selection screen" width="700"/>
+
+- Choose Authentication type Public App (Recommended).
+
+<img src="/img/credentials/big-commerce/public/select_bigcommerce_public_app.png" alt="BigCommerce app authentication type selection screen" width="700"/>
+
+- Enter your BigCommerce Store Hash.
+- Click Save & Authorize.
+
+<img src="/img/credentials/big-commerce/public/click_save_authorize.png" alt="Save and Authorize screen" width="700"/>
+
+- You will be redirected to the BigCommerce log in page. Enter your BigCommerce store registered Email Address and Password, then click Log in.
+
+<img src="/img/credentials/big-commerce/public/enter_email_password.png" alt="BigCommerce email and password login screen" width="700"/>
+
+- Complete any required verification steps (e.g., Verification Code) and click Verify.
+
+<img src="/img/credentials/big-commerce/public/enter_verification_code.png" alt="BigCommerce verification code screen" width="700"/>
+
+- Select the BigCommerce account you want to connect and click Continue.
+
+<img src="/img/credentials/big-commerce/public/choose_account.png" alt="BigCommerce account selection screen" width="700"/>
+
+- Review the requested permissions and click Confirm to complete the authorization process.
+
+<img src="/img/credentials/big-commerce/public/confirm_install.png" alt="BigCommerce app install confirmation screen" width="700"/>
+
+- Once connected, you will be automatically redirected back to appse ai platform and the BigCommerce credential will be saved.
+
+</TabItem>
+
+<TabItem value="Private App" label="Private App">
+
 ## Setup Credential
 
 Follow the steps below to quickly set up your credential.
@@ -97,6 +164,8 @@ Once both **Store Hash** and **API Token** are entered into the credential form,
 - If unsuccessful, try the following solutions:
    * Ensure your Store Hash and token are correct and that the scopes are properly set.
    * Ensure that your API token has the required scope for the Customers endpoint. Missing or insufficient permissions may result in authentication or data access errors. Refer to the OAuth scope recommendation table above.
+</TabItem>
+</Tabs>
 
 ---
 
@@ -2082,4 +2151,4 @@ Click on **Continue**, then **Run** node.
 </Tabs>
 
 ## Support
-If you are unsure about any field or face connection issues, reach out to our support team at [hello@appse.ai](mailto:hello@appse.ai)
+If you are unsure about any field or face connection issues, reach out to our support team at [support@appse.ai](mailto:support@appse.ai)
