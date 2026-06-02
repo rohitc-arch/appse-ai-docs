@@ -1,6 +1,7 @@
 ---
 slug: /platform/key-concepts/nodes/built-in/decision
 title: Decision Node
+description: Step-by-step guide to configure the Decision Node in appse ai workflows.
 ---
 
 The Decision Node in appse ai allows you to evaluate incoming data based on one or more conditions and route each record into either the True or False output path.
@@ -165,4 +166,4 @@ Use these True and False outputs to connect different downstream nodes, dependin
 
 ## Support
 
-Need help? Contact the support team at [hello@appse.ai](mailto:hello@appse.ai)
+Need help? Contact the support team at [support@appse.ai](mailto:support@appse.ai)

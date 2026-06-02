@@ -1,6 +1,7 @@
 ---
 slug: /platform/key-concepts/nodes/built-in/filter
 title: Filter Node
+description: Step-by-step guide to configure the Filter Node in appse ai workflows.
 ---
 
 The Filter Node in appse ai allows you to selectively pass through only the data records that meet one or more defined conditions.
@@ -163,4 +164,4 @@ Use the Filter node when you want only matching records to continue in a single 
 
 ## Support
 
-Need help? Contact the support team at [hello@appse.ai](mailto:hello@appse.ai)
+Need help? Contact the support team at [support@appse.ai](mailto:support@appse.ai)
