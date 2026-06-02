@@ -67,7 +67,7 @@ Before connecting, you need to retrieve your Dynamics 365 Sales Environment URL.
 
 <img src="/img/credentials/dynamics-365-sales/environment-url.png" alt="Copy Environment URL from Power Platform Admin Center" width="700"/>
 
-:::info
+:::note
 The Environment URL format is typically:
 `https://orgXXXXX.crm.dynamics.com`
 :::
@@ -179,4 +179,4 @@ The following tables outline the available triggers and actions for Microsoft Dy
 
 ## Support
 
-Need help? Contact our support team at [hello@appse.ai](mailto:hello@appse.ai)
+Need help? Contact our support team at [support@appse.ai](mailto:support@appse.ai)
