@@ -136,7 +136,9 @@ If the following error is displayed for SAP DIS:
 <img src="/img/credentials/sap-business-one-dis/quickfix.png" alt="SAP DIS SM_OBS_DLL error 
 screenshot" width="700"/>
 
-Delete the file at location `C:\Windows\Temp\SM_OBS_DLL\1000120` from your local system and try again.
+1. Stop the SAP-related service from Services.
+2. Delete the folder at `C:\Windows\Temp\SM_OBS_DLL\1000120` (Note: The folder name may vary depending on your environment)
+3. Start the SAP service again, verify it is running and try the connection once more.
 :::
 
 ## Support
