@@ -10,7 +10,7 @@ PayPal is a leading global digital payments platform that enables businesses and
 
 ## Set Up Credential
 
-:::info
+:::note
 
 Before you create a credential for PayPal using appse ai, ensure you have an active PayPal Business account and have registered an application in the PayPal Developer Dashboard to obtain your OAuth 2.0 credentials.
 
@@ -34,8 +34,6 @@ You'll be asked to fill in the following details:
 Click **Select a Credential** and choose **PayPal** from the application list.
 
 <img src="/img/credentials/paypal/click-select-credential-paypal.png" alt="appse ai PayPal Select Credential" width="700"/>
-
-<br/>
 
 This opens the PayPal credential form. Add your **Connection Name**.
 Select the correct **Mode** — **Sandbox** for testing or **Production** for production use.
@@ -71,9 +69,7 @@ Return to the appse ai credential form. Fill in all the required fields — **Cl
 
 <img src="/img/credentials/paypal/paste-credentials-paypal.png" alt="appse ai PayPal Save Credential" width="700"/>
 
-<br/>
-
-:::warning
+:::caution
 
 Keep your credentials secure. Do not share your Client Secret publicly. If you believe your credentials have been compromised, revoke access from the PayPal Developer Dashboard immediately and generate new credentials.
 
@@ -109,4 +105,4 @@ Here is a list of the available actions for PayPal:
 
 ## Support
 
-Need help? Contact our support team at [hello@appse.ai](mailto:hello@appse.ai)
+Need help? Contact our support team at [support@appse.ai](mailto:support@appse.ai)
