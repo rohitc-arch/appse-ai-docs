@@ -13,7 +13,7 @@ EBay is a global e-commerce marketplace that enables businesses and individuals 
 
 ## Set Up Credential
 
-:::info
+:::note
 
 Before you create a credential for EBay using appse ai, ensure you have an [EBay Developer Account](https://developer.ebay.com/) and have created a Production application to obtain your API keys.
 
@@ -48,7 +48,7 @@ This opens the EBay credential form. Enter your **Connection Name**.
 
 #### 2. Get Your App ID and Cert ID
 
-Navigate to the [EBay Developer Portal - Application Keys](https://developer.ebay.com/my/keys).
+Navigate to the [EBay Developer Portal — Application Keys](https://developer.ebay.com/my/keys).
 
 <img src="/img/credentials/ebay/application-keys.png" alt="EBay Developer Portal Application Keys" width="700"/>
 
@@ -61,19 +61,22 @@ Under the **Production** keyset:
 Use the **Production** keyset, not the Sandbox keyset. The Sandbox environment is for testing only and will not work with live data.
 :::
 
+On the same page, locate the **User Tokens** link next to your Client ID and click it to proceed to the next step.
+
 ---
 
 #### 3. Get Your RuName (Redirect URL Name)
 
-Navigate to the [EBay Developer Portal - User Tokens](https://developer.ebay.com/my/auth).
+You should now be on the **User Tokens** page. If not, navigate directly to [EBay Developer Portal — User Tokens](https://developer.ebay.com/my/auth).
 
 <img src="/img/credentials/ebay/user-tokens-ru-name.png" alt="EBay Developer Portal User Tokens RuName" width="700"/>
 
 1. Click **Get a Token from EBay via Your Application**.
 2. In the **RuName** section, click **Add EBay Redirect URL**.
-3. Paste the appse ai callback URL into the **Your Auth accepted URL** field.
-4. Click **Save** to generate the RuName.
-5. Copy the generated **RuName** and paste it into the **RuName (Redirect URL Name)** field in appse ai.
+3. If this is your first time, EBay will display a **"Confirm the Legal Address for the Primary Contact or Business"** form before proceeding. Complete and submit this form to continue.
+4. Once on the redirect URL registration screen, paste the appse ai callback URL into the **Your Auth accepted URL** field.
+5. Click **Save**. EBay will generate a **RuName** — a unique identifier string (e.g., `YourAppName-YourApp-12345`), not a URL.
+6. Copy this RuName identifier and paste it into the **RuName (Redirect URL Name)** field in appse ai.
 
 :::note
 The callback URL to register can be found in the appse ai credential form under the **RuName (Redirect URL Name)** field help text or your appse ai workspace settings.
@@ -108,7 +111,7 @@ If successful, your EBay credential will display a **✓** icon. You can now use
 
 If it fails, a **!** icon will appear — recheck your App ID, Cert ID, and RuName, or contact support.
 
-:::warning
+:::caution
 Keep your Cert ID (Client Secret) secure. Do not share it publicly. Anyone with access to your credentials can interact with your EBay seller account.
 :::
 
@@ -299,4 +302,4 @@ Click on **Continue**, then **Run** the node.
 
 ## Support
 
-Need help? Contact our support team at [hello@appse.ai](mailto:hello@appse.ai)
+Need help? Contact our support team at [support@appse.ai](mailto:support@appse.ai)
