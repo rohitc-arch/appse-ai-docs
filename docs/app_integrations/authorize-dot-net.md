@@ -92,7 +92,7 @@ If you do not have a sandbox account, create one from the [Authorize.Net Develop
 
 This page displays your **API Login ID** and lets you generate a **Transaction Key**.
 
-:::warning
+:::caution
 Your API Login ID and Transaction Key are not the same as your Merchant Interface login username and password. They are used exclusively for API authentication.
 :::
 
@@ -118,7 +118,7 @@ On the **API Credentials and Keys** page, locate your **API Login ID**.
 If you already have a Transaction Key and need a new one (for example, the previous key was lost or compromised), click **Generate New Transaction Key** again. When prompted, choose whether to disable the previous Transaction Key immediately or let it expire after 24 hours.
 :::
 
-:::warning
+:::caution
 Store your Transaction Key securely. If you lose it, you must generate a new one from the Merchant Interface.
 :::
 
@@ -185,4 +185,4 @@ A common reporting workflow looks like this:
 
 ## Support
 
-Need help? Contact the support team at [hello@appse.ai](mailto:hello@appse.ai)
+Need help? Contact the support team at [support@appse.ai](mailto:support@appse.ai)
