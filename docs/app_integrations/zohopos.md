@@ -80,6 +80,38 @@ Keep your credentials secure. Do not share your Client Secret publicly. If you b
 
 ---
 
+## Triggers
+
+Triggers let your appse ai workflows start automatically in response to events in Zoho POS. Here is a list of the available triggers for Zoho POS:
+
+### New Record Triggers
+
+| Trigger | Description |
+| ------- | ----------- |
+| **New Bill Created** | Triggers when a new bill is created in Zoho POS. |
+| **New Credit Note Created** | Triggers when a new credit note is created in Zoho POS. |
+| **New Customer Created** | Triggers when a new customer (contact) is created in Zoho POS. |
+| **New Invoice Created** | Triggers when a new invoice is created in Zoho POS. |
+| **New Item Adjustment Created** | Triggers when a new inventory item adjustment is created in Zoho POS. |
+| **New Item Created** | Triggers when a new item (product or service) is created in Zoho POS. |
+| **New Purchase Order Created** | Triggers when a new purchase order is created in Zoho POS. |
+| **New Sales Order Created** | Triggers when a new sales order is created in Zoho POS. |
+
+### Record Update Triggers
+
+| Trigger | Description |
+| ------- | ----------- |
+| **Bill Update** | Triggers when an existing bill is updated in Zoho POS. |
+| **Credit Note Update** | Triggers when an existing credit note is updated in Zoho POS. |
+| **Customer Update** | Triggers when an existing customer (contact) is updated in Zoho POS. |
+| **Invoice Update** | Triggers when an existing invoice is updated in Zoho POS. |
+| **Item Adjustment Update** | Triggers when an existing inventory item adjustment is updated in Zoho POS. |
+| **Item Update** | Triggers when an existing item (product or service) is updated in Zoho POS. |
+| **Purchase Order Update** | Triggers when an existing purchase order is updated in Zoho POS. |
+| **On Sales Order Update** | Triggers when an existing sales order is updated in Zoho POS. |
+
+---
+
 ## Actions
 
 Here is a list of the available actions for Zoho POS:
@@ -113,6 +145,14 @@ Here is a list of the available actions for Zoho POS:
 | ------ | ----------- |
 | **Create New Invoice** | Creates a new sales invoice in Zoho POS. Requires customer details, line item information, and the invoice date. Additional fields such as payment terms and custom fields may also be specified. |
 | **Update Invoice** | Updates the details of an existing invoice record. Requires the **Invoice ID** of the record to be modified along with the fields that are to be updated. |
+
+
+
+#### Item Adjustments
+
+| Action | Description |
+| ------ | ----------- |
+| **Create Item Adjustment** | Creates a new inventory item adjustment in Zoho POS to record changes in stock quantity or value. Requires the adjustment type, reason, date, and the line items along with the quantity or value to be adjusted. |
 
 
 
@@ -197,38 +237,6 @@ Here is a list of the available actions for Zoho POS:
 | Action | Description |
 | ------ | ----------- |
 | **Search Records** | A generic search action that enables you to query and retrieve records across multiple modules within Zoho POS, including Contacts, Items, Invoices, Sales Orders, Purchase Orders, and more. Requires the selection of a **Module** and a **Search Criteria** to filter and return the relevant records. This action serves as a unified alternative to individual listing actions across all supported modules. |
-
-## Triggers
-
-Triggers let your appse ai workflows start automatically in response to events in Zoho POS. Here is a list of the available triggers for Zoho POS:
-
-#### New Record Triggers
-
-| Trigger | Description |
-| ------- | ----------- |
-| **New Bill Created** | Triggers when a new bill is created in Zoho POS. |
-| **New Credit Note Created** | Triggers when a new credit note is created in Zoho POS. |
-| **New Customer Created** | Triggers when a new customer (contact) is created in Zoho POS. |
-| **New Item Adjustment Created** | Triggers when a new inventory item adjustment is created in Zoho POS. |
-| **New Item Created** | Triggers when a new item (product or service) is created in Zoho POS. |
-| **New Purchase Order Created** | Triggers when a new purchase order is created in Zoho POS. |
-| **New Sales Order Created** | Triggers when a new sales order is created in Zoho POS. |
-
-#### Record Update Triggers
-
-| Trigger | Description |
-| ------- | ----------- |
-| **On Bill Update** | Triggers when an existing bill is updated in Zoho POS. |
-| **On Credit Note Update** | Triggers when an existing credit note is updated in Zoho POS. |
-| **On Customer Update** | Triggers when an existing customer (contact) is updated in Zoho POS. |
-| **On Item Adjustment Update** | Triggers when an existing inventory item adjustment is updated in Zoho POS. |
-| **On Item Update** | Triggers when an existing item (product or service) is updated in Zoho POS. |
-| **On Purchase Order Update** | Triggers when an existing purchase order is updated in Zoho POS. |
-| **On Sales Order Update** | Triggers when an existing sales order is updated in Zoho POS. |
-
-
-
-
 
 ## Support
 
